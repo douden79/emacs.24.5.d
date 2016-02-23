@@ -1,0 +1,17 @@
+* USB Tunner 테스트 및 수정.
+- [X] OpenPLi4 [7362]
+  - [X] dvbsky
+    - [X] scan
+    - [X] detect [ bsp 수정 및 업데이트 ]
+- [-] OpenPLi3.5 [7335] [7356]
+  - [-] Sundtek
+    - [ ] scan
+    - [X] detect [7335]
+    - [ ] Plugins - others - dvb-sundtek.controlcenter
+    - [ ] DVB-T 를 선택하여 메뉴얼 스캔 하면 죽음. ( 디버깅 필요 )
+- rtl2832 (Dexatek DK DVB-T Dongle : DVB-T)
+
+  - 7335/7356 all model은 정상 동작하나, 7362 all model은 인식만 되고 scan은 안됨
+
+- af9015 (KWorld USB DVB-T TV Stick II(VS-DVB-T 395U) : DVB-T)
+7335/7356 all 모델은 인식부터 안됨

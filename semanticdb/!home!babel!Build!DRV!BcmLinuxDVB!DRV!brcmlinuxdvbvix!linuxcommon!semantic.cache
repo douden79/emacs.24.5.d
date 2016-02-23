@@ -1,0 +1,299 @@
+;; Object linuxcommon/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "linuxcommon/"
+  :tables
+  (list
+    (semanticdb-table "linuxcommon.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("linux/version.h" include (:system-flag t) nil [1 27])
+            ("linux/export.h" include (:system-flag t) nil [236 265])
+            ("linux/kconfig.h" include (:system-flag t) nil [266 296])
+            ("linux/kernel.h" include (:system-flag t) nil [304 329])
+            ("linux/sched.h" include (:system-flag t) nil [330 354])
+            ("linux/errno.h" include (:system-flag t) nil [355 379])
+            ("linux/string.h" include (:system-flag t) nil [380 405])
+            ("linux/types.h" include (:system-flag t) nil [406 430])
+            ("linux/ctype.h" include (:system-flag t) nil [431 455])
+            ("linux/delay.h" include (:system-flag t) nil [456 480])
+            ("linux/mm.h" include (:system-flag t) nil [481 502])
+            ("linux/slab.h" include (:system-flag t) nil [503 526])
+            ("asm/mman.h" include (:system-flag t) nil [527 548])
+            ("linux/fs.h" include (:system-flag t) nil [549 570])
+            ("linux/timer.h" include (:system-flag t) nil [571 595])
+            ("linux/poll.h" include (:system-flag t) nil [596 619])
+            ("linux/mutex.h" include (:system-flag t) nil [620 644])
+            ("linux/compiler.h" include (:system-flag t) nil [645 672])
+            ("TIME_LCD" variable (:constant-flag t) nil [681 689])
+            ("FAKE_VIX" variable (:constant-flag t) nil [700 708])
+            ("INTERNEL_LOOTHRU" variable (:constant-flag t) nil [719 735])
+            ("HAVE_DVIINPUT" variable (:constant-flag t) nil [746 759])
+            ("CI_ROUTE" variable (:constant-flag t) nil [770 778])
+            ("VTUNER_ON" variable (:constant-flag t) nil [839 848])
+            ("DTS_ENABLED" variable (:constant-flag t) nil [892 903])
+            ("FREE_SLOT" variable (:constant-flag t) nil [914 923])
+            ("OCCUPIED_SLOT" variable (:constant-flag t) nil [935 948])
+            ("TEST_MODE" variable (:constant-flag t) nil [960 969])
+            ("nexus_base_types.h" include nil nil [973 1002])
+            ("NUM_VIDEO" variable (:constant-flag t) nil [1011 1020])
+            ("NUM_AUDIO" variable (:constant-flag t) nil [1058 1067])
+            ("TUNER3_BAND" variable (:constant-flag t) nil [1106 1117])
+            ("CABLE_TUNER_BAND" variable (:constant-flag t) nil [1149 1165])
+            ("CABLE_TUNER_BAND_2ND" variable (:constant-flag t) nil [1188 1208])
+            ("LOCK_CALLBACK" variable (:constant-flag t) nil [1644 1657])
+            ("TUNER1_BAND" variable (:constant-flag t) nil [1668 1679])
+            ("TUNER2_BAND" variable (:constant-flag t) nil [1708 1719])
+            ("REMUX_BAND" variable (:constant-flag t) nil [1748 1758])
+            ("VTUNER0_BAND" variable (:constant-flag t) nil [1795 1807])
+            ("VTUNER1_BAND" variable (:constant-flag t) nil [1836 1848])
+            ("PVR_BAND" variable (:constant-flag t) nil [1877 1885]))          
+      :file "linuxcommon.h"
+      :pointmax 1974
+      :fsize 1973
+      :lastmodtime '(22214 29530 261932 659000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("FAKE_VIX" . ((number "0" 709 . 710)))
+          ("TEST_MODE" . ((number "0" 971 . 972)))
+          ("PVR_BAND" . ((symbol "NEXUS_ParserBand_e0" 1886 . 1905)))
+          ("HAVE_DVIINPUT" . ((number "0" 760 . 761)))
+          ("TUNER3_BAND" . ((symbol "NEXUS_ParserBand_e2" 1121 . 1140)))
+          ("LOCK_CALLBACK" . ((number "0" 1658 . 1659)))
+          ("DTS_ENABLED" . ((number "1" 904 . 905)))
+          ("VTUNER1_BAND" . ((symbol "NEXUS_ParserBand_e5" 1849 . 1868)))
+          ("TUNER2_BAND" . ((symbol "NEXUS_ParserBand_e2" 1720 . 1739)))
+          ("CABLE_TUNER_BAND" . ((symbol "TUNER3_BAND" 1168 . 1179)))
+          ("REMUX_BAND" . ((symbol "NEXUS_ParserBand_e4" 1760 . 1779)))
+          ("VTUNER0_BAND" . ((symbol "NEXUS_ParserBand_e1" 1808 . 1827)))
+          ("INTERNEL_LOOTHRU" . ((number "1" 736 . 737)))
+          ("VTUNER_ON" . ((number "1" 849 . 850)))
+          ("TUNER1_BAND" . ((symbol "NEXUS_ParserBand_e3" 1680 . 1699)))
+          ("TIME_LCD" . ((number "0" 690 . 691)))
+          ("NUM_VIDEO" . ((symbol "NEXUS_NUM_VIDEO_DECODERS" 1025 . 1049)))
+          ("NUM_AUDIO" . ((symbol "NEXUS_NUM_AUDIO_DECODERS" 1073 . 1097)))
+          ("CABLE_TUNER_BAND_2ND" . ((symbol "NEXUS_ParserBand_e6" 1209 . 1228)))
+          ("CI_ROUTE" . ((number "1" 779 . 780)))
+          ("FREE_SLOT" . ((number "0" 925 . 926)))
+          ("OCCUPIED_SLOT" . ((number "1" 949 . 950)))
+          )
+)
+    (semanticdb-table "comm_brcmfb.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("video_format_Set" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("video_format" variable (:type ("VIDEO_FORMAT_L" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22 50]))                  
+                :type "int")
+                nil [1 51])
+            ("wait_uartThread" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("wait" variable (:type "int") (reparse-symbol arg-sub-list) [73 82]))                  
+                :type "void")
+                nil [52 83])
+            ("StopDMX4RestartE2" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [107 112]))                  
+                :type "void")
+                nil [84 113])
+            ("StopAV" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [126 131]))                  
+                :type "void")
+                nil [114 132])
+            ("exit_uartThread" function
+               (:prototype-flag t
+                :type "void")
+                nil [133 156])
+            ("micom_standby" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [176 181]))                  
+                :type "void")
+                nil [157 182])
+            ("tvlite_scart_aspect_ratio_Set" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("aspect_ratio" variable (:type ("TV_ASPECT_L" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [217 242]))                  
+                :type "int")
+                nil [183 243])
+            ("standby_vfdmode" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [265 270]))                  
+                :type "void")
+                nil [244 271])
+            ("tvlite_scart_standby_mode_Set" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [307 312]))                  
+                :type "void")
+                nil [272 313])
+            ("tvlite_scart_Wakeup" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [339 344]))                  
+                :type "void")
+                nil [314 345])
+            ("GetBlitMode" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [363 368]))                  
+                :type "bool")
+                nil [346 369])
+            ("video_EncFmt_Set" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("video_format" variable (:type ("VIDEO_FORMAT_L" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [392 420]))                  
+                :type "void")
+                nil [370 421])
+            ("blitAuto_function" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("force" variable (:type "bool") (reparse-symbol arg-sub-list) [445 456]))                  
+                :type "bool")
+                nil [422 457]))          
+      :file "comm_brcmfb.h"
+      :pointmax 458
+      :fsize 457
+      :lastmodtime '(22214 29530 261932 659000)
+      :unmatched-syntax nil)
+    (semanticdb-table "comm_frontuart.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("get_front_type" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [20 25]))                  
+                :type "int")
+                nil [1 26])
+            ("phStbRCProtocol_mod_init" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [57 62]))                  
+                :type "int")
+                nil [27 63])
+            ("phStbRCProtocol_mod_exit" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [95 100]))                  
+                :type "void")
+                nil [64 101])
+            ("fpm_luminance_Set__bsp" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("level" variable (:type "int") (reparse-symbol arg-sub-list) [129 139]))                  
+                :type "int")
+                nil [102 140])
+            ("fpm_set_rotate" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("on" variable (:type "int") (reparse-symbol arg-sub-list) [161 168])
+                    ("restart" variable (:type "bool") (reparse-symbol arg-sub-list) [168 181]))                  
+                :type "void")
+                nil [141 182])
+            ("is_support_deep_standby" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [211 216]))                  
+                :type "int")
+                nil [183 217])
+            ("micom_standby" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [237 242]))                  
+                :type "void")
+                nil [218 243])
+            ("fpm_text_Set__bsp" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("string" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [267 286])
+                    ("count" variable (:type "int") (reparse-symbol arg-sub-list) [287 297]))                  
+                :type "void")
+                nil [244 298])
+            ("fpm_vfd_testfunc" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("string" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [445 464])
+                    ("count" variable (:type "int") (reparse-symbol arg-sub-list) [465 475]))                  
+                :type "void")
+                nil [423 476])
+            ("fp_mod_init" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [611 616]))                  
+                :type "int")
+                nil [594 617])
+            ("fpm_icon_Set" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("IconIndex" variable (:type "int") (reparse-symbol arg-sub-list) [636 650])
+                    ("bOnOff" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [651 672]))                  
+                :type "void")
+                nil [618 673])
+            ("fpm_time_Get__bsp" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [705 710]))                  
+                :type "unsigned int")
+                nil [674 711])
+            ("fpm_get_front_version" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [748 753]))                  
+                :type "unsigned char")
+                nil [712 754])
+            ("fpm_time_Set__bsp" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("utc_seconds" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [777 802]))                  
+                :type "int")
+                nil [755 803])
+            ("fpm_off" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [817 822]))                  
+                :type "void")
+                nil [804 823])
+            ("fpm_set_front_type" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("setType" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [848 870]))                  
+                :type "void")
+                nil [824 871])
+            ("front_uart_init" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [892 897]))                  
+                :type "int")
+                nil [872 898])
+            ("_fpm_data_frame_Write" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [925 950])
+                    ("count" variable (:type "int") (reparse-symbol arg-sub-list) [951 961]))                  
+                :type "int")
+                nil [899 962]))          
+      :file "comm_frontuart.h"
+      :pointmax 963
+      :fsize 962
+      :lastmodtime '(22214 29530 261932 659000)
+      :unmatched-syntax nil))
+  :file "!home!babel!Build!DRV!BcmLinuxDVB!DRV!brcmlinuxdvbvix!linuxcommon!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

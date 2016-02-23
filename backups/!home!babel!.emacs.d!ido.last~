@@ -1,0 +1,111 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/babel/.emacs.d/melpa/" . "auto-complete-clang-20140409.52/")
+ ("/home/babel/Build/Broadcom/BCMLinuxDVB/BcmLinuxDVB/DRV/brcmlinuxdvbvix/" . "core/")
+ ("/home/babel/Build/Broadcom/BCMLinuxDVB/BcmLinuxDVB/DRV/" . "brcmlinuxdvbvix/")
+ ("/home/babel/Build/Broadcom/BCMLinuxDVB/BcmLinuxDVB/" . "DRV/")
+ ("/home/babel/Build/Broadcom/BCMLinuxDVB/" . "BcmLinuxDVB/")
+ ("/home/babel/Build/Broadcom/" . "BCMLinuxDVB/")
+ ("/home/babel/emacs.d/" . "core/")
+ ("/home/babel/Build/Test/OpenPLi3.5/openpli3.0/meta-openpli/recipes-bsp/" . "technomate/")
+ ("/home/babel/Build/Test/OpenPLi3.5/openpli3.0/meta-openpli/" . "recipes-bsp/")
+ ("/home/babel/Build/Test/OpenPLi3.5/openpli3.0/" . "meta-openpli/")
+ ("/home/babel/Build/Test/OpenPLi3.5/" . "openpli3.0/")
+ ("/home/babel/Build/Test/OpenPLi4/openpli4.0/meta-dags/recipes-bsp/" . "drivers/")
+ ("/home/babel/Build/Test/OpenPLi4/openpli4.0/meta-dags/" . "recipes-bsp/")
+ ("/home/babel/Build/Test/OpenPLi4/openpli4.0/" . "meta-dags/")
+ ("/home/babel/Build/Test/OpenPLi4/" . "openpli4.0/")
+ ("/home/babel/Build/Test/" . "OpenPLi3.5/")
+ ("/home/babel/Build/" . "Broadcom/")
+ ("/home/babel/.emacs.d/" . "core/")
+ ("/home/babel/" . ".emacs.d/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/babel/.emacs.d/core/"
+ "/home/babel/.emacs.d/melpa/auto-complete-clang-20140409.52/"
+ "/home/babel/emacs.d/core/"
+ "/home/babel/"
+ "/home/babel/Build/Broadcom/BCMLinuxDVB/BcmLinuxDVB/DRV/brcmlinuxdvbvix/core/"
+ "/home/babel/Build/Broadcom/BCMLinuxDVB/BcmLinuxDVB/DRV/brcmlinuxdvbvix/co164/"
+ "/home/babel/.emacs.d/"
+ "/home/babel/Build/Test/OpenPLi3.5/openpli3.0/meta-openpli/recipes-bsp/technomate/"
+ "/home/babel/Build/Test/OpenPLi4/openpli4.0/meta-dags/recipes-bsp/drivers/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "editor.el"
+ "autocomplete.el"
+ "packages.el"
+ "gui.el"
+ "auto-complete-clang-autoloads.el"
+ "pli.org"
+ "trafficlight.cpp"
+ "test.cpp"
+ "bcmprocfs.c"
+ "Makefile"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/babel/.emacs.d/core/" (22220 9129 706173 506000) "gui.el" "core.el" "../" "keybindings.el" "packages.el" "editor.el" "autocomplete.el" "./")
+
+ ("/home/babel/.emacs.d/" (22220 9712 246149 8000) "init.el" "auto-save-list/" "ido.last" "../" "places" "backups/" ".python-environments/" "ac-comphist.dat" "snippets/" "./" "core/" "melpa/" ".git/")
+
+ ("/home/babel/" (22220 9734 694148 64000) ".smex-items" "enigma2-plugin-systemplugins-crossepg.bb" "modules/" ".mission-control/" ".viminfo" "emacs.d/" "l" ".gitconfig" "em/" ".config/" ".ICEauthority" "Dropbox/" ".icons/" ".ecb-tip-of-day.el" ".ssh/" "usb-tunner.org" "vmlinux.gz" "ss/" ".goutputstream-5SXBDY" "trafficlight.cpp" "resolv.conf" "../" "0216/" ".thumbnails/" ".gstreamer-0.10/" "yEd/" "1029/" "e2openplugin-CrossEPG/" ".goutputstream-BDH3BY" ".profile" ".java/" ".PlayOnLinux/" "brcm.tar" "Desktop/" ".emacs.d_/" ".gconf/" ".compiz-1/" ".bash_history" ".fontconfig/" ".pip/" ".pulse-cookie" "tftp/" "emacs-clang-complete-async/" "boot" ".goutputstream-QLE0BY" "VirtualBox VMs/" "linux-firmware/" ".goutputstream-4YIVBY" "Downloads/" ".shotwell/" ".dropbox/" "technomate-openpli-enigma2-4-force2se-linux-4.2.1-23022016-usb.zip" ".gnupg/" "hosts" ".dmrc" ".oracle_jre_usage/" ".bashrc" ".goutputstream-ZBTTBY" "build-pli5.sh" "pli.org" ".dropbox-dist/" ".xsession-errors" ".goutputstream-NV1MBY" ".pki/" ".goutputstream-4K4JCY" ".mozilla/" ".xsession-errors.old" "minicom.log" "brcm43236/" ".goutputstream-BU80BY" ".gtk-bookmarks" ".goutputstream-UP1XAY" ".goutputstream-R4Q4BY" "enigma2-plugin-systemplugins-crossepg.bbappend" ".xinput.d/" ".themes/" ".local/" "./" "update/" "TEST/" ".vim/" ".subversion/" "dags-dvb-modules-7362.bb" "HBBTV/" ".gnome2/" "test.cpp" ".gvfs/" "wl.ko" "Build/" ".thunderbird/" "brcm/" "back/" "lib/" ".pulse/" "YosemiteSanFranciscoFont/" ".bash_logout" ".goutputstream-WQSSBY" ".goutputstream-QRP2CY" ".cache/" ".emacs.d/" ".dbus/" ".Xauthority" "aaaaaa/" "build-enviroment/")
+
+ ("/home/babel/.emacs.d/melpa/auto-complete-clang-20140409.52/" (22219 60134 82784 625000) "auto-complete-clang-pkg.elc" "../" "auto-complete-clang.elc" "auto-complete-clang.el" "./" "auto-complete-clang-autoloads.el" "auto-complete-clang-pkg.el")
+
+ ("/home/babel/.emacs.d/melpa/" (22219 60133 882784 634000) "dash-20151216.1315/" "auto-complete-clang-20140409.52/" "moe-theme-20160216.1821/" "../" "yasnippet-20160131.948/" "better-defaults-20160127.2318/" "archives/" "popup-20151222.1339/" "smartparens-20160221.539/" "iedit-20150915.2022/" "./" "smex-20151212.1409/" "auto-complete-clang-readme.txt" "gnupg/" "auto-complete-20160107.8/")
+
+ ("/home/babel/Build/Test/OpenPLi4/openpli4.0/meta-dags/recipes-bsp/drivers/" (22220 336 578543 296000) "bouquet-channel.bb" "dags-shutdown/" "enigma2-plugin-systemplugins-crossepg.bb" "linux-dvb-firmware.inc" "dags-gst-plugin-dvbmediasink.bb" "enigma2-plugin-extensions-openwebif/" "oe-factory.bb" "enigma2-3rdparty-plugins.bb" "dags-dvb-modules.inc" "dags-shutdown.bb" "enigma2-plugin-softcams-newcs-config_1.67RC.bb" "transtreamproxy.bb" "../" "openpli-factory-image.bbappend" "hbbtv-dumpait.bb" "filestreamproxy/" "enigma2-plugin-softcams-cccam_2.3.0.bbappend" "filestreamproxy.bb" "enigma2.bbappend" "splash-bootlogo.bb" "enigma2-plugin-extensions-openwebif.bb" "enigma2-plugin-softcams-mgcamd-config_1.30d.bb" "3rd-party-feed-configs.bbappend" "hbbtv-dumpait/" "opera-dumpait.bb" "openpli-dvb-usb.bb" "splash-bootlogo/" "softcams-enigma2-config-meta.bb" "dags-dvb-modules-7356.bb" "enigma2-plugin-systemplugins-crossepg/" "distro-feed-configs.bbappend" "enigma2-plugin-softcams-cccam-config_2.3.0.bb" "base-files_3.0.14.bbappend" "firmware-dvb-usb-si2168.bb" ".enigma2-plugin-systemplugins-crossepg.bb.swp" "opera-browser-util/" "./" "bouquet-channel.bb~" "tuxbox-links.bbappend" "tm-bouquet-channel.bb" "dags-dvb-modules-7362.bb" "transtreamproxy/" "bouquet-channel/" "tm-bouquet-channel/" ".enigma2-oe-alliance-plugins.bb.swp" "openpli-enigma2-image.bbappend" "opera-browser-util.bb" "3rd-party-plugins.bb")
+
+ ("/home/babel/Build/Broadcom/BCMLinuxDVB/BcmLinuxDVB/DRV/brcmlinuxdvbvix/co164/" (22219 64951 586582 28000) "../" "Makefile" "co164.o" "./" "co164_DAGS_120618.tco" "co164.c")
+
+ ("/home/babel/Build/Broadcom/BCMLinuxDVB/BcmLinuxDVB/DRV/brcmlinuxdvbvix/core/" (22219 64485 826601 615000) "vmlinux.gz" "../" "Makefile" "bcmlinuxdvb.c" "./" "bcmprocfs.c" "ver.h" "bcmlinuxdvb_driver.mod.c")
+
+ ("/home/babel/Build/Broadcom/BCMLinuxDVB/BcmLinuxDVB/DRV/brcmlinuxdvbvix/" (22212 1303 435041 927000) "GRTAGS" "cable_plug/" "hdmi/" "cable_dual/" "#TAGS#" "frontuart/" "vtuner/" "sccr/" "linuxcommon/" ".#TAGS" "avs/" "../" "gpio/" "GTAGS" "Makefile" "demux/" "install_modules.sh" "sat_plug/" "sat_plug_sp2230/" "alpumr/" "GPATH" "brcmdvb/" "lnb/" "fan/" "co164/" "sci/" "./" "core/" "cam/" "rfmod/" "vtunerc/" "graphics/" "TAGS" "cable/" "scam/" "debug/")
+
+ ("/home/babel/Build/Broadcom/BCMLinuxDVB/BcmLinuxDVB/DRV/" (22213 36029 638001 145000) "97356_20130918/" "kmod7362_unified20140613.sh.back" "unified_20140324/" "buildenv353_32_7335.inc" "kmod7356_64unified20130918.sh" "kmod7362_kernel4.2.1.sh" "../" "unified_20140919/" "Makefile" "firmware.tar.gz" "kmod7362_unified20140613.sh" "dmcdk/" "unified_20151217/" "buildenv353_32_7335_ios200.inc" "brcmlinuxdvbvix/" "kmod7335_64.sh" "linuxtv/" "unified_20140613/" "./" "kmod7335_64_ios200.sh" "20101203/" "H/")
+
+ ("/home/babel/Build/Broadcom/BCMLinuxDVB/BcmLinuxDVB/" (22213 6840 569001 854000) "sdk830/" "linux-4.2/" "DRV/" "FPGA/" "linux-3.9.7-r1/" "linux-4.2.1_/" "../" "dmcdk/" "CFE_V3_39/" "src/" "linux-4.2.1/" "CFE_V2_21/" "micom/" "unified_cfe_v14.2/" "misc_apps/" "linux-4.1/" "brcm43236/" "unified_cfe_v14.1/" "aardvark01t_rel_6_37_14_105/" "oe-image/" "./" "aardvark01t_rel_6_37_14_105.tgz" "unified_cfe_v14.3/")
+
+ ("/home/babel/Build/Broadcom/BCMLinuxDVB/" (22191 1936 519333 721000) "../" ".gitignore" "README" "TVLITE/" "BcmLinuxDVB/" "./" ".git/")
+
+ ("/home/babel/Build/Broadcom/" (22191 1125 607347 202000) "../" "makefile/" "BCMLinuxDVB/" "./")
+
+ ("/home/babel/emacs.d/core/" (22219 46248 779368 564000) "core.el" "../" "ui.el" "keybindings.el" "packages.el" "editor.el" "./")
+
+ ("/home/babel/emacs.d/" (22219 45619 443395 30000) "init.el" "auto-save-list/" "tramp" "ido.last" "../" "session.10c073aeebc6cca63145568668993629000000022490044" "places" "backups/" ".python-environments/" "ac-comphist.dat" "snippets/" "./" "core/" "melpa/" ".git/" "session.10c073aeebc6cca631455677003229200000022490041")
+
+ ("/home/babel/Build/Test/OpenPLi3.5/openpli3.0/meta-openpli/recipes-bsp/technomate/" (22219 51392 951152 229000) "technomate-dvb-modules-tm2toe.bb" "bouquet-channel.bb" "dags-shutdown/" "enigma2-plugin-systemplugins-crossepg.bb" "ntfs-3g-ntfsprogs_2013.1.13.bb" "technomate-dvb-modules-optimussos1plus.bb" "technomate-dvb-modules-7362.inc" "technomate-dvb-modules-force1.bb" "technomate-dvb-modules-ios300new.bb" "dags-gst-plugin-dvbmediasink.bb" "technomate-dvb-modules-fusionhd.bb" "enigma2-oe-plugins.bb" "oe-factory.bb" "technomate-dvb-modules-tmsingle.bb" "technomate-dvb-modules-optimussos.bb" "cfe-bootloader.bb" "dags-shutdown.bb" "../" "openpli-factory-image.bbappend" "technomate-dvb-modules-ci.inc" "technomate-dvb-modules-optimussos2.bb" "technomate-dvb-modules-force2.bb" "technomate-dvb-modules-7356-tmnano3tcombo.inc" "technomate-dvb-modules-tmnanose.bb" "technomate-dvb-modules-force2solid.bb" "technomate-dvb-modules.inc" "openplugins-distutils.inc" "technomate-dvb-modules-tmnano2t.bb" "technomate-dvb-modules-tmnano2super.bb" "technomate-dvb-modules-tmnanosem2.bb" "cfe-bootloader/" "splash-logo/" "technomate-dvb-modules-7356.inc_back" "enigma2-plugin-systemplugins-crossepg/" "technomate-dvb-modules-optimussos1.bb" "splash-logo.bb" "enigma2-oe-plugins/" "technomate-dvb-modules-tmnanosecombo.bb" "openplugins.inc" "eglibc_2.13.bbappend" "3rdparty-plugins.bb" "technomate-dvb-modules-force2plus.bb" "./" "technomate-dvb-modules-force1plus.bb" "tm-bouquet-channel.bb" "technomate-dvb-modules-force2se.bb" "technomate-dvb-modules-mediabox.bb" "technomate-dvb-modules-tmnanooe.bb" "bouquet-channel/" "technomate-dvb-modules-optimussos2plus.bb" "tm-bouquet-channel/" "technomate-dvb-modules-7356.inc" "openpli-enigma2-image.bbappend" "technomate-dvb-modules-tmnanoseplus.bb" "technomate-dvb-modules-ios200.bb" "technomate-dvb-modules-optimussos3plus.bb" "technomate-dvb-modules-tmtwinoe.bb" "technomate-dvb-modules-ios100.bb" "technomate-dvb-modules-ios300.bb")
+
+ ("/home/babel/Build/DRV/" (22214 29766 149922 739000) "../" ".gitignore" "README" "TVLITE/" "BcmLinuxDVB/" "./" ".git/")
+
+ ("/home/babel/Build/Test/OpenPLi3.5/openpli3.0/meta-openpli/recipes-bsp/" (22219 48647 43267 706000) "etxx00/" "alsa-state/" "vuplus/" "../" "xp/" "technomate/" "dreambox/" "./")
+
+ ("/home/babel/Build/Test/OpenPLi3.5/openpli3.0/meta-openpli/" (22219 48647 723267 677000) "conf/" "recipes-support/" "../" "classes/" "recipes-extended/" "recipes-connectivity/" "recipes-devtools/" "recipes-core/" "recipes-multimedia/" "recipes-bsp/" "./" "recipes-linux/" "recipes-openpli/")
+
+ ("/home/babel/Build/Test/OpenPLi3.5/openpli3.0/" (22219 48837 239259 708000) "meta-openembedded/" "LICENSE" "sources/" "branding.conf.sample" "../" "bitbake/" "Makefile" ".gitignore" ".gitmodules" "build-tmtwinoe/" "ChangeLog" "meta-openpli/" "openembedded-core/" "meta-local/" "./" "recreate_feed" ".git/" "site.conf")
+
+ ("/home/babel/Build/Test/OpenPLi3.5/" (22219 48607 203269 382000) "openpli3.0/" "../" "build-3.5.sh" "./")
+
+ ("/home/babel/Build/Test/OpenPLi4/openpli4.0/meta-dags/recipes-bsp/" (22218 43555 882237 890000) "../" "linux/" "./" "drivers/")
+
+ ("/home/babel/Build/Test/OpenPLi4/openpli4.0/meta-dags/" (22218 43555 898237 889000) "conf/" "../" "recipes-filesystem/" "recipes-multimedia/" "recipes-bsp/" "./" "recipes-network/" ".git/" "recipes-openpli/")
+
+ ("/home/babel/Build/Test/OpenPLi4/openpli4.0/" (22218 51478 713904 700000) "meta-openembedded/" "LICENSE" "sources/" "meta-dream/" "branding.conf.sample" "../" "meta-xtrend/" "bitbake/" "Makefile" ".gitignore" "meta-xp/" ".gitmodules" "ChangeLog" "meta-openpli/" "openembedded-core/" "meta-vuplus/" "meta-local/" "./" "meta-dags/" "recreate_feed" ".git/" "meta-hd/" "build/" "meta-formuler/" "site.conf")
+
+ ("/home/babel/Build/Test/OpenPLi4/" (22218 43519 442239 423000) "../" "build-4.0.new.sh" "./" "openpli4.0/")
+
+ ("/home/babel/Build/Test/" (22219 45300 631408 437000) "OpenPLi4/" "../" "OpenPLi5/" "build-pli5.sh" "OpenPLi3.5/" "./" "OpenPLi-Xsarius/")
+
+ ("/home/babel/Build/" (22214 28839 977961 689000) "DRV/" "Diff/" "../" "Oe.Latest/" "Test/" "Oe.Old/" "BSP/" "./" "Broadcom/")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

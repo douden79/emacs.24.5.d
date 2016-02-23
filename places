@@ -1,0 +1,55 @@
+;;; -*- coding: utf-8 -*-
+(("/home/babel/Build/DRV/BcmLinuxDVB/DRV/brcmlinuxdvbvix/core/bcmprocfs.c" . 36423)
+ ("/home/babel/.emacs.d/core/autocomplete.el" . 494)
+ ("/home/babel/.emacs.d/core/editor.el" . 741)
+ ("/home/babel/.emacs.d/melpa/magit-20160219.1502/magit-autoloads.el" . 49950)
+ ("/home/babel/.emacs.d/melpa/git-commit-20160130.649/git-commit-autoloads.el" . 1001)
+ ("/home/babel/.emacs.d/melpa/with-editor-20160215.843/with-editor-autoloads.el" . 264)
+ ("/home/babel/.emacs.d/melpa/magit-popup-20160130.649/magit-popup-autoloads.el" . 264)
+ ("/home/babel/.emacs.d/melpa/async-20160108.1249/async-autoloads.el" . 4143)
+ ("/home/babel/.emacs.d/melpa/highlight-symbol-20160102.1209/highlight-symbol-autoloads.el" . 2828)
+ ("/home/babel/.emacs.d/melpa/auto-complete-clang-20140409.52/"
+  (dired-filename . "/home/babel/.emacs.d/melpa/auto-complete-clang-20140409.52/auto-complete-clang-autoloads.el"))
+ ("/home/babel/pli.org" . 185)
+ ("/home/babel/emacs.d/core/packages.el" . 1660)
+ ("/home/babel/.emacs.d/core/gui.el" . 952)
+ ("/home/babel/emacs.d/core/editor.el" . 2376)
+ ("/home/babel/.emacs.d/core/packages.el" . 986)
+ ("/home/babel/.emacs.d/melpa/function-args-20160206.517/function-args-autoloads.el" . 671)
+ ("/home/babel/.emacs.d/melpa/swiper-20160222.1218/swiper-autoloads.el" . 2496)
+ ("/home/babel/.emacs.d/melpa/auto-complete-clang-20140409.52/auto-complete-clang-autoloads.el" . 260)
+ ("/home/babel/.emacs.d/init.el" . 1981)
+ ("/home/babel/.emacs.d/melpa/yasnippet-20160131.948/yasnippet-autoloads.el" . 1534)
+ ("/home/babel/.emacs.d/melpa/auto-complete-20160107.8/auto-complete-autoloads.el" . 1713)
+ ("/home/babel/.emacs.d/melpa/popup-20151222.1339/popup-autoloads.el" . 224)
+ ("/home/babel/Build/Test/OpenPLi4/openpli4.0/build/"
+  (dired-filename . "/home/babel/Build/Test/OpenPLi4/openpli4.0/build/tmp"))
+ ("/home/babel/Build/Test/OpenPLi4/openpli4.0/build/tmp/deploy/"
+  (dired-filename . "/home/babel/Build/Test/OpenPLi4/openpli4.0/build/tmp/deploy/.."))
+ ("/home/babel/Build/Test/OpenPLi4/openpli4.0/build/tmp/"
+  (dired-filename . "/home/babel/Build/Test/OpenPLi4/openpli4.0/build/tmp/cache"))
+ ("/home/babel/Build/Test/OpenPLi4/openpli4.0/build/tmp/deploy/ipk/"
+  (dired-filename . "/home/babel/Build/Test/OpenPLi4/openpli4.0/build/tmp/deploy/ipk/force1plus"))
+ ("/home/babel/Build/Test/OpenPLi4/openpli4.0/build/tmp/deploy/ipk/force1plus/" . 79)
+ ("/home/babel/"
+  (dired-filename . "/home/babel/kernel-module-mxl5007t_3.9.7-r0_force1plus.ipk"))
+ ("/home/babel/Build/"
+  (dired-filename . "/home/babel/Build/Test"))
+ ("/home/babel/Build/Test/"
+  (dired-filename . "/home/babel/Build/Test/OpenPLi4"))
+ ("/home/babel/Build/Test/OpenPLi4/"
+  (dired-filename . "/home/babel/Build/Test/OpenPLi4/openpli4.0"))
+ ("/home/babel/Build/Test/OpenPLi4/openpli4.0/"
+  (dired-filename . "/home/babel/Build/Test/OpenPLi4/openpli4.0/meta-dags"))
+ ("/home/babel/Build/Test/OpenPLi4/openpli4.0/meta-dags/"
+  (dired-filename . "/home/babel/Build/Test/OpenPLi4/openpli4.0/meta-dags/recipes-bsp"))
+ ("/home/babel/Build/Test/OpenPLi4/openpli4.0/meta-dags/recipes-bsp/"
+  (dired-filename . "/home/babel/Build/Test/OpenPLi4/openpli4.0/meta-dags/recipes-bsp/drivers"))
+ ("/home/babel/Build/Test/OpenPLi4/openpli4.0/meta-dags/recipes-bsp/drivers/"
+  (dired-filename . "/home/babel/Build/Test/OpenPLi4/openpli4.0/meta-dags/recipes-bsp/drivers/openpli-enigma2-image.bbappend"))
+ ("/home/babel/Build/Test/OpenPLi4/openpli4.0/meta-dags/recipes-bsp/drivers/openpli-enigma2-image.bbappend" . 331)
+ ("/home/babel/Build/Test/OpenPLi4/openpli4.0/meta-dags/recipes-bsp/drivers/openpli-dvb-usb.bb" . 1214)
+ ("/home/babel/usb-tunner.org" . 2505)
+ ("/home/babel/Build/Test/OpenPLi3.5/openpli3.0/meta-openpli/recipes-bsp/technomate/openpli-enigma2-image.bbappend" . 1239)
+ ("/home/babel/.emacs.d/core/keybindings.el" . 763)
+ ("/home/babel/.emacs.d/melpa/iedit-20150915.2022/iedit-autoloads.el" . 3026))

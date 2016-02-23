@@ -1,0 +1,3040 @@
+;; Object core/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "core/"
+  :tables
+  (list
+    (semanticdb-table "bcmprocfs.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("../linuxcommon/linuxcommon.h" include nil nil [1 40])
+            ("linux/proc_fs.h" include (:system-flag t) nil [41 67])
+            ("linux/module.h" include (:system-flag t) nil [68 93])
+            ("bcmdebug.h" include nil nil [94 115])
+            ("bstd.h" include nil nil [116 133])
+            ("bkni.h" include nil nil [134 151])
+            ("bsp_i.h" include nil nil [152 170])
+            ("front_common.h" include nil nil [171 196])
+            ("nexus_picture_ctrl.h" include nil nil [197 228])
+            ("nexus_video_adj.h" include nil nil [229 257])
+            ("nexus_video_window.h" include nil nil [258 289])
+            ("nexus_video_decoder.h" include nil nil [290 322])
+            ("ver.h" include nil nil [323 339])
+            ("project.h" include nil nil [340 360])
+            ("../linuxcommon/comm_brcmfb.h" include nil nil [361 400])
+            ("../linuxcommon/comm_frontuart.h" include nil nil [401 443])
+            ("trace_procfs" variable (:constant-flag t) nil [733 745])
+            ("proc_entry_table" type
+               (:members 
+                  ( ("proc_file_id" variable (:type "int") (reparse-symbol classsubparts) [833 854])
+                    ("proc_file_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [859 883]))                  
+                :type "struct")
+                nil [802 886])
+            ("hw_info" variable
+               (:typemodifiers ("extern")
+                :type ("HARDWARE_INFO_S" type (:type "class") nil nil))
+                nil [888 919])
+            ("avia_av_event_reg" type
+               (:members 
+                  ( ("hsize" variable (:type ("u16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [953 963])
+                    ("vsize" variable (:type ("u16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [968 978])
+                    ("aratio" variable (:type ("u16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [983 994])
+                    ("frate" variable (:type ("u16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [999 1009])
+                    ("brate" variable (:type ("u16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1014 1024])
+                    ("vbsize" variable (:type ("u16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1029 1040])
+                    ("atype" variable (:type ("u16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1045 1055]))                  
+                :type "struct")
+                nil [921 1059])
+            ("PROC_DEBG" variable (:constant-flag t) nil [1068 1077])
+            ("AVIA_AV_EVENT_TIMER" variable (:constant-flag t) nil [1088 1107])
+            ("event_t" type
+               (:members 
+                  ( ("event" variable (:type "unsigned int") (reparse-symbol classsubparts) [1132 1151]))                  
+                :type "struct")
+                nil [1111 1154])
+            ("normalStandby_onOff" variable
+               (:default-value "false"
+                :type "bool")
+                nil [1191 1224])
+            ("ClipVleft" variable (:type "int") nil [1225 1272])
+            ("ClipVtop" variable (:type "int") nil [1225 1272])
+            ("Clipwidth" variable (:type "int") nil [1225 1272])
+            ("Clipheight" variable (:type "int") nil [1225 1272])
+            ("get_front_type" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1394 1399]))                  
+                :type "int")
+                nil [1368 1400])
+            ("event_delay" variable
+               (:typemodifiers ("static")
+                :type ("u32" type (:type "class") nil nil))
+                nil [1402 1425])
+            ("event_timer" variable
+               (:typemodifiers ("static")
+                :type ("timer_list" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1490 1527])
+            ("avs_dir_entry" variable
+               (:pointer 1
+                :type ("proc_dir_entry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1528 1565])
+            ("ethinfo_entry" variable
+               (:pointer 1
+                :type ("proc_dir_entry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1606 1643])
+            ("avs_entry" variable
+               (:pointer 1
+                :dereference 1
+                :type ("proc_dir_entry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1678 1714])
+            ("tsmux_dir_entry" variable
+               (:pointer 1
+                :type ("proc_dir_entry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1749 1788])
+            ("video_dir_entry" variable
+               (:pointer 1
+                :type ("proc_dir_entry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1829 1868])
+            ("lcd_entry" variable
+               (:pointer 1
+                :dereference 1
+                :type ("proc_dir_entry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1909 1946])
+            ("video_entry" variable
+               (:pointer 1
+                :dereference 1
+                :type ("proc_dir_entry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1981 2020])
+            ("fb_dir_entry" variable
+               (:pointer 1
+                :type ("proc_dir_entry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2055 2091])
+            ("fb_entry" variable
+               (:pointer 1
+                :dereference 1
+                :type ("proc_dir_entry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2132 2167])
+            ("fbpri_dir_entry" variable
+               (:pointer 1
+                :type ("proc_dir_entry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2202 2241])
+            ("fbpri_entry" variable
+               (:pointer 1
+                :dereference 1
+                :type ("proc_dir_entry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2282 2320])
+            ("denc_dir_entry" variable
+               (:pointer 1
+                :type ("proc_dir_entry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2355 2393])
+            ("lcd_dir_entry" variable
+               (:pointer 1
+                :type ("proc_dir_entry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2434 2471])
+            ("vmpeg0_dir_entry" variable
+               (:pointer 1
+                :type ("proc_dir_entry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2512 2552])
+            ("vmpeg1_dir_entry" variable
+               (:pointer 1
+                :type ("proc_dir_entry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2593 2633])
+            ("vmpeg0_entry" variable
+               (:pointer 1
+                :dereference 1
+                :type ("proc_dir_entry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2674 2714])
+            ("vmpeg1_entry" variable
+               (:pointer 1
+                :dereference 1
+                :type ("proc_dir_entry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2755 2795])
+            ("vmpeg_dir_entry" variable
+               (:pointer 1
+                :type ("proc_dir_entry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2836 2875])
+            ("vmpeg_entry" variable
+               (:pointer 1
+                :dereference 1
+                :type ("proc_dir_entry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2916 2954])
+            ("frontend0_dir_entry" variable
+               (:pointer 1
+                :type ("proc_dir_entry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2995 3038])
+            ("frontend0_entry" variable
+               (:pointer 1
+                :dereference 1
+                :type ("proc_dir_entry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [3079 3121])
+            ("frontend1_dir_entry" variable
+               (:pointer 1
+                :type ("proc_dir_entry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [3162 3205])
+            ("frontend1_entry" variable
+               (:pointer 1
+                :dereference 1
+                :type ("proc_dir_entry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [3246 3288])
+            ("aud_dir_entry" variable
+               (:pointer 1
+                :type ("proc_dir_entry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [3329 3366])
+            ("progress_entry" variable
+               (:pointer 1
+                :type ("proc_dir_entry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [3407 3445])
+            ("ts_mux_entry" variable
+               (:pointer 1
+                :dereference 1
+                :type ("proc_dir_entry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [3486 3526])
+            ("denc_entry" variable
+               (:pointer 1
+                :dereference 1
+                :type ("proc_dir_entry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [3561 3598])
+            ("fp_entry" variable
+               (:pointer 1
+                :type ("proc_dir_entry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [3633 3665])
+            ("fan_sensors_entry" variable
+               (:pointer 1
+                :type ("proc_dir_entry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [3700 3741])
+            ("info_entry" variable
+               (:pointer 1
+                :dereference 1
+                :type ("proc_dir_entry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [3776 3813])
+            ("info_dir_entry" variable
+               (:pointer 1
+                :type ("proc_dir_entry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [3848 3886])
+            ("aud_entry" variable
+               (:pointer 1
+                :dereference 1
+                :type ("proc_dir_entry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [3921 3957])
+            ("ir_rc_dir_entry" variable
+               (:pointer 1
+                :type ("proc_dir_entry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [3992 4031])
+            ("ir_rc_entry" variable
+               (:pointer 1
+                :dereference 1
+                :type ("proc_dir_entry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [4072 4110])
+            ("misc_dir_entry" variable
+               (:pointer 1
+                :type ("proc_dir_entry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [4151 4189])
+            ("misc_entry" variable
+               (:pointer 1
+                :dereference 1
+                :type ("proc_dir_entry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [4230 4267])
+            ("ir_mouse_dir_entry" variable
+               (:pointer 1
+                :type ("proc_dir_entry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [4308 4350])
+            ("ir_mouse_entry" variable
+               (:pointer 1
+                :dereference 1
+                :type ("proc_dir_entry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [4391 4432])
+            ("hdmi_dir_entry" variable
+               (:pointer 1
+                :type ("proc_dir_entry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [4473 4511])
+            ("hdmi_entry" variable
+               (:pointer 1
+                :dereference 1
+                :type ("proc_dir_entry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [4552 4589])
+            ("avs_temp" variable
+               (:pointer 1
+                :type ("proc_dir_entry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [4630 4662])
+            ("rcubrand" variable
+               (:pointer 1
+                :type ("proc_dir_entry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [4692 4724])
+            ("ci0_tsclock_status" variable
+               (:default-value "1"
+                :type "int")
+                nil [4785 4812])
+            ("ci1_tsclock_status" variable
+               (:default-value "1"
+                :type "int")
+                nil [4813 4840])
+            ("fbx" variable
+               (:typemodifiers ("static")
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [4842 4880])
+            ("fby" variable
+               (:typemodifiers ("static")
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [4842 4880])
+            ("fbxres" variable
+               (:typemodifiers ("static")
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [4842 4880])
+            ("fbyres" variable
+               (:typemodifiers ("static")
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [4842 4880])
+            ("vidFmt" variable
+               (:typemodifiers ("static")
+                :default-value "eVF_YBR_CVBS"
+                :type ("VIDEO_FORMAT_L" type (:type "class") nil nil))
+                nil [4881 4923])
+            ("previdFmt" variable
+               (:typemodifiers ("static")
+                :default-value "VIDEO_FORMAT_COUNT"
+                :type ("VIDEO_FORMAT_L" type (:type "class") nil nil))
+                nil [4924 4975])
+            ("tsinput0" variable
+               (:dereference 1
+                :type "char")
+                nil [4976 4993])
+            ("tsinput1" variable
+               (:dereference 1
+                :type "char")
+                nil [4994 5011])
+            ("ciinput0" variable
+               (:dereference 1
+                :type "char")
+                nil [5012 5029])
+            ("ciinput1" variable
+               (:dereference 1
+                :type "char")
+                nil [5030 5047])
+            ("ciinputclk0" variable
+               (:dereference 1
+                :type "char")
+                nil [5048 5068])
+            ("ciinputclk1" variable
+               (:dereference 1
+                :type "char")
+                nil [5069 5089])
+            ("ts_inputpath0" variable
+               (:default-value "0x00"
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [5090 5117])
+            ("ci_inputpath0" variable
+               (:default-value "0x00"
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [5118 5145])
+            ("ts_inputpath1" variable
+               (:default-value "0x01"
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [5146 5173])
+            ("ci_inputpath1" variable
+               (:default-value "0x00"
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [5174 5201])
+            ("tsinput1" variable
+               (:dereference 1
+                :type "char")
+                nil [5202 5219])
+            ("proc_rc" variable (:type ("NEXUS_Error" type (:type "class") nil nil)) nil [5220 5240])
+            ("atoi" function
+               (:arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5250 5267]))                  
+                :type "int")
+                nil [5241 5513])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("atoi" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5528 5533]))                  
+                :type "int")
+                nil [5514 5534])
+            ("FLASH_LENGTH" variable (:constant-flag t) nil [5543 5555])
+            ("FIRSTMAC_ADDR" variable (:constant-flag t) nil [5571 5584])
+            ("MACADDR_STRIDE" variable (:constant-flag t) nil [5599 5613])
+            ("get_MAC_addr" function
+               (:arguments 
+                  ( ("flashbase" variable (:type "long") (reparse-symbol arg-sub-list) [5639 5654])
+                    ("addrnum" variable (:type "int") (reparse-symbol arg-sub-list) [5655 5667])
+                    ("macstr" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5668 5682])
+                    ("flashprog_off" variable (:type "int") (reparse-symbol arg-sub-list) [5683 5702]))                  
+                :type "void")
+                nil [5620 6423])
+            ("progress_open" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("inode" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6450 6471])
+                    ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6472 6491]))                  
+                :type "int")
+                nil [6425 6509])
+            ("progress_close" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("inode" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6536 6557])
+                    ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6558 6577]))                  
+                :type "int")
+                nil [6510 6595])
+            ("progress_read" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6626 6644])
+                    ("__user" variable (:type "char") (reparse-symbol arg-sub-list) [6645 6658])
+                    ("" variable (:type ("buf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6658 6662])
+                    ("count" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6663 6676])
+                    ("pos" variable
+                       (:pointer 1
+                        :type ("loff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6677 6689]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [6597 6788])
+            ("fpm_led_Set" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("LedIndex" variable (:type "int") (reparse-symbol arg-sub-list) [6813 6826])
+                    ("bOnOff" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [6827 6848]))                  
+                :type "int")
+                nil [6790 6849])
+            ("progress_timer" variable
+               (:typemodifiers ("static")
+                :type ("timer_list" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [6850 6890])
+            ("progress_timer_callback" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("arg" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [7118 7136]))                  
+                :type "void")
+                nil [7082 10128])
+            ("per" variable
+               (:typemodifiers ("static")
+                :type ("u16" type (:type "class") nil nil))
+                nil [10130 10145])
+            ("get_ProgressPer" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10166 10171]))                  
+                :type ("u16" type (:type "class") nil nil))
+                nil [10146 10191])
+            ("progress_write" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10223 10241])
+                    ("__user" variable
+                       (:constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10242 10261])
+                    ("" variable (:type ("userbuf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10261 10269])
+                    ("count" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10270 10283])
+                    ("pos" variable
+                       (:pointer 1
+                        :type ("loff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10284 10296]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [10193 12447])
+            ("progress_fops" variable
+               (:typemodifiers ("static")
+                :default-value "{
+    .owner      = THIS_MODULE,
+    .open       = progress_open,
+    .release    = progress_close,
+    .read       = progress_read,
+    .write      = progress_write,
+}"
+                :type ("file_operations" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [12449 12665])
+            ("bcm7335_proc_data_t" type
+               (:members 
+                  ( ("proc_file" variable (:type "int") (reparse-symbol classsubparts) [12700 12714])
+                    ("value" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [12719 12735]))                  
+                :type "struct")
+                nil [12666 12738])
+            ("videoSettings" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("NEXUS_PictureCtrlCommonSettings" type (:type "class") nil nil))
+                nil [12739 12795])
+            ("pictureAdvSettings" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("NEXUS_PictureCtrlAdvColorSettings" type (:type "class") nil nil))
+                nil [12796 12859])
+            ("splitScreen" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("NEXUS_VideoWindowSplitScreenSettings" type (:type "class") nil nil))
+                nil [12860 12919])
+            ("dnrSettings" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("NEXUS_VideoWindowDnrSettings" type (:type "class") nil nil))
+                nil [12920 12971])
+            ("contrastStretchSettings" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("NEXUS_PictureCtrlContrastStretch" type (:type "class") nil nil))
+                nil [12972 13039])
+            ("FB_PROPERTY_MAX_COUNT" variable (:constant-flag t) nil [13154 13175])
+            ("info_property_data" variable
+               (:dereference 1
+                :type ("bcm7335_proc_data_t" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [13186 14109])
+            ("misc_property_data" variable
+               (:dereference 1
+                :type ("bcm7335_proc_data_t" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [13186 14109])
+            ("vmpeg0_property_data" variable
+               (:dereference 1
+                :type ("bcm7335_proc_data_t" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [13186 14109])
+            ("vmpeg1_property_data" variable
+               (:dereference 1
+                :type ("bcm7335_proc_data_t" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [13186 14109])
+            ("vmpeg_property_data" variable
+               (:dereference 1
+                :type ("bcm7335_proc_data_t" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [13186 14109])
+            ("fb_property_data" variable
+               (:dereference 1
+                :type ("bcm7335_proc_data_t" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [13186 14109])
+            ("fbpri_property_data" variable
+               (:dereference 1
+                :type ("bcm7335_proc_data_t" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [13186 14109])
+            ("aud_property_data" variable
+               (:dereference 1
+                :type ("bcm7335_proc_data_t" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [13186 14109])
+            ("video_property_data" variable
+               (:dereference 1
+                :type ("bcm7335_proc_data_t" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [13186 14109])
+            ("denc_property_data" variable
+               (:dereference 1
+                :type ("bcm7335_proc_data_t" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [13186 14109])
+            ("lcd_property_data" variable
+               (:dereference 1
+                :type ("bcm7335_proc_data_t" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [13186 14109])
+            ("avs_property_data" variable
+               (:dereference 1
+                :type ("bcm7335_proc_data_t" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [13186 14109])
+            ("tspath_property_data" variable
+               (:dereference 1
+                :type ("bcm7335_proc_data_t" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [13186 14109])
+            ("frotend0_property_data" variable
+               (:dereference 1
+                :type ("bcm7335_proc_data_t" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [13186 14109])
+            ("frotend1_property_data" variable
+               (:dereference 1
+                :type ("bcm7335_proc_data_t" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [13186 14109])
+            ("ir_mouse_property_data" variable
+               (:dereference 1
+                :type ("bcm7335_proc_data_t" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [13186 14109])
+            ("ir_rc_property_data" variable
+               (:dereference 1
+                :type ("bcm7335_proc_data_t" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [13186 14109])
+            ("hdmi_property_data" variable
+               (:dereference 1
+                :type ("bcm7335_proc_data_t" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [13186 14109])
+            ("ethinfo_property_data" variable (:type ("bcm7335_proc_data_t" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [13186 14109])
+            ("avs_temp_data" variable (:type ("bcm7335_proc_data_t" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [13186 14109])
+            ("rcu_brand_data" variable (:type ("bcm7335_proc_data_t" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [13186 14109])
+            ("vleft" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type "int")
+                nil [14162 14227])
+            ("vtop" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type "int")
+                nil [14162 14227])
+            ("vwidth" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type "int")
+                nil [14162 14227])
+            ("vheight" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type "int")
+                nil [14162 14227])
+            ("zoomin" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [14162 14227])
+            ("zoomrate" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [14162 14227])
+            ("vidmod" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [14228 14251])
+            ("policy2" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [14252 14276])
+            ("policy" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [14277 14300])
+            ("aspect" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [14301 14324])
+            ("wss" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [14325 14345])
+            ("VIDEO_PROC_HDMI_COLORSPACE_CHOICES_LIST" variable (:constant-flag t) nil [14514 14553])
+            ("VIDEO_PROC_POLICY_CHOICES_LIST" variable (:constant-flag t) nil [14705 14735])
+            ("VIDEO_PROC_VIDEOMODE_CHOICES_LIST" variable (:constant-flag t) nil [15265 15298])
+            ("VIDEO_PROC_VIDEOMODE_ALL_CHOICES_LIST" variable (:constant-flag t) nil [15529 15566])
+            ("TS_PROC_INPUT0_CHOCIES_LIST" variable (:constant-flag t) nil [15639 15666])
+            ("TS_PROC_INPUT1_CHOCIES_LIST" variable (:constant-flag t) nil [15695 15722])
+            ("TS_PROC_CI0_INPUT_CHOCIES_LIST" variable (:constant-flag t) nil [15751 15781])
+            ("TS_PROC_CI0_TSCLK_CHOCIES_LIST" variable (:constant-flag t) nil [15803 15833])
+            ("TS_PROC_CI1_INPUT_CHOCIES_LIST" variable (:constant-flag t) nil [15859 15889])
+            ("TS_PROC_CI1_TSCLK_CHOCIES_LIST" variable (:constant-flag t) nil [15911 15941])
+            ("ETHINFO" variable (:constant-flag t) nil [15990 15997])
+            ("AVS_COLORFORMAT" variable (:constant-flag t) nil [16042 16057])
+            ("AVS_COLORFORMAT_CHOICES" variable (:constant-flag t) nil [16095 16118])
+            ("AVS_FB" variable (:constant-flag t) nil [16156 16162])
+            ("AVS_FB_CHOICES" variable (:constant-flag t) nil [16200 16214])
+            ("AVS_INPUT" variable (:constant-flag t) nil [16252 16261])
+            ("AVS_INPUT_CHOICES" variable (:constant-flag t) nil [16299 16316])
+            ("AVS_SB" variable (:constant-flag t) nil [16354 16360])
+            ("AVS_SB_CHOICES" variable (:constant-flag t) nil [16398 16412])
+            ("AVS_VOLUME" variable (:constant-flag t) nil [16450 16460])
+            ("DENC_WSS" variable (:constant-flag t) nil [16499 16507])
+            ("DENC_WSS_CHOICES" variable (:constant-flag t) nil [16547 16563])
+            ("FB_ALPHA_VALUE" variable (:constant-flag t) nil [16604 16618])
+            ("FB_ALPHA_OP" variable (:constant-flag t) nil [16659 16670])
+            ("FB_3DMODE" variable (:constant-flag t) nil [16711 16720])
+            ("FB_ZNORM" variable (:constant-flag t) nil [16761 16769])
+            ("FB_DST_LEFT" variable (:constant-flag t) nil [16810 16821])
+            ("FB_DST_WIDTH" variable (:constant-flag t) nil [16862 16874])
+            ("FB_DST_TOP" variable (:constant-flag t) nil [16915 16925])
+            ("FB_DST_HEIGHT" variable (:constant-flag t) nil [16966 16979])
+            ("FB_PRIMARY_3D" variable (:constant-flag t) nil [17020 17033])
+            ("FB_PRIMARY_ZOFFSET" variable (:constant-flag t) nil [17066 17084])
+            ("LCD_TIMESHIFT" variable (:constant-flag t) nil [17460 17473])
+            ("LCD_PLAY" variable (:constant-flag t) nil [17526 17534])
+            ("LCD_REC" variable (:constant-flag t) nil [17586 17593])
+            ("LCD_SCRAMBLE" variable (:constant-flag t) nil [17644 17656])
+            ("LCD_LOCK" variable (:constant-flag t) nil [17709 17717])
+            ("LCD_DVR" variable (:constant-flag t) nil [17770 17777])
+            ("LCD_HD" variable (:constant-flag t) nil [17830 17836])
+            ("LCD_MP3" variable (:constant-flag t) nil [17889 17896])
+            ("LCD_DVD" variable (:constant-flag t) nil [17949 17956])
+            ("LCD_AC3" variable (:constant-flag t) nil [18009 18016])
+            ("LCD_DVIX" variable (:constant-flag t) nil [18069 18077])
+            ("LCD_STANDBY" variable (:constant-flag t) nil [18130 18141])
+            ("LCD_SCROLL_DELAY" variable (:constant-flag t) nil [18193 18209])
+            ("LCD_SCROLL" variable (:constant-flag t) nil [18255 18265])
+            ("LCD_TXT" variable (:constant-flag t) nil [18312 18319])
+            ("LCD_BRIGHTNESS" variable (:constant-flag t) nil [18370 18384])
+            ("LCD_ALL" variable (:constant-flag t) nil [18435 18442])
+            ("LCD_RECORDINGS" variable (:constant-flag t) nil [18564 18578])
+            ("LCD_VIDEO_FIFO_DEPTH" variable (:constant-flag t) nil [18623 18643])
+            ("LCD_VIDEO_SEEK_MODE" variable (:constant-flag t) nil [18689 18708])
+            ("LCD_VIDEO_SEEK_SPEED" variable (:constant-flag t) nil [18754 18774])
+            ("VIDEO_ALPHA" variable (:constant-flag t) nil [18822 18833])
+            ("VIDEO_ASPECT" variable (:constant-flag t) nil [18875 18887])
+            ("VIDEO_ASPECT_CHOICES" variable (:constant-flag t) nil [18929 18949])
+            ("VIDEO_HDMI_COLORSPACE" variable (:constant-flag t) nil [18991 19012])
+            ("VIDEO_HDMI_COLORSPACE_CHOICES" variable (:constant-flag t) nil [19054 19083])
+            ("VIDEO_POLICY" variable (:constant-flag t) nil [19125 19137])
+            ("VIDEO_POLICY2" variable (:constant-flag t) nil [19179 19192])
+            ("VIDEO_POLICY_CHOICES" variable (:constant-flag t) nil [19234 19254])
+            ("VIDEO_VIDEOMODE" variable (:constant-flag t) nil [19296 19311])
+            ("VIDEO_VIDEOMODE_50HZ" variable (:constant-flag t) nil [19353 19373])
+            ("VIDEO_VIDEOMODE_50HZ_CHOICES" variable (:constant-flag t) nil [19415 19443])
+            ("VIDEO_VIDEOMODE_60HZ" variable (:constant-flag t) nil [19485 19505])
+            ("VIDEO_VIDEOMODE_60HZ_CHOICES" variable (:constant-flag t) nil [19547 19575])
+            ("VIDEO_VIDEOMODE_CHOICES" variable (:constant-flag t) nil [19617 19640])
+            ("VIDEO_VIDEOMODE_PREFERRED" variable (:constant-flag t) nil [19682 19707])
+            ("AUD_J1_MUTE" variable (:constant-flag t) nil [19750 19761])
+            ("AUD_AC3" variable (:constant-flag t) nil [19801 19808])
+            ("AUD_AC3_CHOICES" variable (:constant-flag t) nil [19849 19864])
+            ("AUD_AAC" variable (:constant-flag t) nil [19905 19912])
+            ("AUD_AAC_CHOICES" variable (:constant-flag t) nil [19953 19968])
+            ("AUD_AUDIO_DELAY_BITSTREAM" variable (:constant-flag t) nil [20009 20034])
+            ("AUD_AUDIO_DELAY_PCM" variable (:constant-flag t) nil [20075 20094])
+            ("AUD_FORCE_HDMI_AUDIO_DISABLE" variable (:constant-flag t) nil [20135 20163])
+            ("AUD_PTS_OFFSET" variable (:constant-flag t) nil [20205 20219])
+            ("VMPEG_DEINTERLACE" variable (:constant-flag t) nil [20260 20277])
+            ("VMPEG_DEINTERLACE_CHOICES" variable (:constant-flag t) nil [20321 20346])
+            ("VMPEG_ZOOMIN" variable (:constant-flag t) nil [20396 20408])
+            ("VMPEG_ZOOMRATE" variable (:constant-flag t) nil [20447 20461])
+            ("VMPEG_DST_WIDTH" variable (:constant-flag t) nil [20502 20517])
+            ("VMPEG_DST_HEIGHT" variable (:constant-flag t) nil [20559 20575])
+            ("VMPEG_DST_LEFT" variable (:constant-flag t) nil [20617 20631])
+            ("VMPEG_DST_TOP" variable (:constant-flag t) nil [20673 20686])
+            ("VMPEG_ASPECT" variable (:constant-flag t) nil [20728 20740])
+            ("VMPEG_CODEC" variable (:constant-flag t) nil [20782 20793])
+            ("VMPEG_FALLBACK_FRAMERATE" variable (:constant-flag t) nil [20835 20859])
+            ("VMPEG_FALLBACK_FRAMERATE_CHOICES" variable (:constant-flag t) nil [20901 20933])
+            ("VMPEG_FRAMERATE" variable (:constant-flag t) nil [20975 20990])
+            ("VMPEG_PROGRESSIVE" variable (:constant-flag t) nil [21032 21049])
+            ("VMPEG_PTS" variable (:constant-flag t) nil [21091 21100])
+            ("VMPEG_PTS_OFFSET" variable (:constant-flag t) nil [21142 21158])
+            ("VMPEG_SHARPNESS_CONTROL" variable (:constant-flag t) nil [21200 21223])
+            ("VMPEG_SHARPNESS_CONTROL_CHOICES" variable (:constant-flag t) nil [21265 21296])
+            ("VMPEG_SHARPNESS_VALUE" variable (:constant-flag t) nil [21338 21359])
+            ("VMPEG_SYNC_OFFSET" variable (:constant-flag t) nil [21401 21418])
+            ("VMPEG_XRES" variable (:constant-flag t) nil [21460 21470])
+            ("VMPEG_YRES" variable (:constant-flag t) nil [21512 21522])
+            ("VMPEG_PEP_APPLY" variable (:constant-flag t) nil [21566 21581])
+            ("VMPEG_PEP_CONTRAST" variable (:constant-flag t) nil [21623 21641])
+            ("VMPEG_PEP_SATURATION" variable (:constant-flag t) nil [21683 21703])
+            ("VMPEG_PEP_HUE" variable (:constant-flag t) nil [21745 21758])
+            ("VMPEG_PEP_BRIGHTNESS" variable (:constant-flag t) nil [21800 21820])
+            ("VMPEG_PEP_BLOCK_NOISE_REDUCTION" variable (:constant-flag t) nil [21862 21893])
+            ("VMPEG_PEP_MOSQUITO_NOISE_REDUCTION" variable (:constant-flag t) nil [21935 21969])
+            ("VMPEG_PEP_DIGITAL_CONTOUR_REMOVAL" variable (:constant-flag t) nil [22011 22044])
+            ("VMPEG_PEP_SPLIT" variable (:constant-flag t) nil [22086 22101])
+            ("VMPEG_PEP_SHARPNESS" variable (:constant-flag t) nil [22143 22162])
+            ("VMPEG_PEP_AUTO_FLESH" variable (:constant-flag t) nil [22204 22224])
+            ("VMPEG_PEP_GREEN_BOOST" variable (:constant-flag t) nil [22266 22287])
+            ("VMPEG_PEP_BLUE_BOOST" variable (:constant-flag t) nil [22329 22349])
+            ("VMPEG_PEP_DYNAMIC_CONTRAST" variable (:constant-flag t) nil [22391 22417])
+            ("VMPEG_PEP_SCALER_SHARPNESS" variable (:constant-flag t) nil [22459 22485])
+            ("TS_INPUT0" variable (:constant-flag t) nil [22529 22538])
+            ("TS_INPUT0_CHOICES" variable (:constant-flag t) nil [22570 22587])
+            ("TS_INPUT1" variable (:constant-flag t) nil [22619 22628])
+            ("TS_INPUT1_CHOICES" variable (:constant-flag t) nil [22660 22677])
+            ("TS_CI0_INPUT" variable (:constant-flag t) nil [22709 22721])
+            ("TS_CI0_INPUT_CHOICES" variable (:constant-flag t) nil [22753 22773])
+            ("TS_CI1_INPUT" variable (:constant-flag t) nil [22805 22817])
+            ("TS_CI1_INPUT_CHOICES" variable (:constant-flag t) nil [22849 22869])
+            ("TS_CI0_TSCLK" variable (:constant-flag t) nil [22901 22913])
+            ("TS_CI0_TSCLK_CHOICES" variable (:constant-flag t) nil [22945 22965])
+            ("TS_CI1_TSCLK" variable (:constant-flag t) nil [22997 23009])
+            ("TS_CI1_TSCLK_CHOICES" variable (:constant-flag t) nil [23041 23061])
+            ("FRONTEND_STATIC_CURRENT_LIMITING" variable (:constant-flag t) nil [23094 23126])
+            ("FRONTEND_STATIC_CURRENT_LIMITING_CHOICES" variable (:constant-flag t) nil [23174 23214])
+            ("RF_SWITCH" variable (:constant-flag t) nil [23263 23272])
+            ("RF_SWITCH_CHOICES" variable (:constant-flag t) nil [23306 23323])
+            ("IR_MOUSE_LEFT_RIGHT_SWAP" variable (:constant-flag t) nil [23358 23382])
+            ("IR_MOUSE_LEFT_RIGHT_SWAP_CHOICES" variable (:constant-flag t) nil [23427 23459])
+            ("IR_MOUSE_UP_DOWN_SWAP" variable (:constant-flag t) nil [23504 23525])
+            ("IR_MOUSE_UP_DOWN_SWAP_CHOICES" variable (:constant-flag t) nil [23570 23599])
+            ("MISC_12V_OUTPUT" variable (:constant-flag t) nil [23644 23659])
+            ("IR_RC_KEY_SWAP" variable (:constant-flag t) nil [23708 23722])
+            ("IR_RC_KEY_SWAP_CHOICES" variable (:constant-flag t) nil [23770 23792])
+            ("IR_RC_MASK0" variable (:constant-flag t) nil [23840 23851])
+            ("IR_RC_MASK1" variable (:constant-flag t) nil [23902 23913])
+            ("HDMI_ENABLE_HDMI_RESET" variable (:constant-flag t) nil [23964 23986])
+            ("HDMI_BYPASS_EDID_CHECKING" variable (:constant-flag t) nil [24037 24062])
+            ("INFO_MODEL" variable (:constant-flag t) nil [24111 24121])
+            ("INFO_MODELNAME" variable (:constant-flag t) nil [24142 24156])
+            ("INFO_CHIPSET" variable (:constant-flag t) nil [24181 24193])
+            ("INFO_VUMODEL" variable (:constant-flag t) nil [24214 24226])
+            ("INFO_BOXTYPE" variable (:constant-flag t) nil [24247 24259])
+            ("INFO_VERSION" variable (:constant-flag t) nil [24280 24292])
+            ("INFO_DRVBUILDDATE" variable (:constant-flag t) nil [24313 24330])
+            ("INFO_HWMODEL" variable (:constant-flag t) nil [24352 24364])
+            ("AVS_TEMP_PROC_NAME" variable (:constant-flag t) nil [24385 24403])
+            ("RCU_BRAND_PROC_NAME" variable (:constant-flag t) nil [24461 24480])
+            ("proc_func" type
+               (:members 
+                  ( ("INFO_PROC_MODEL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [24549 24565])
+                    ("INFO_PROC_CHIPSET" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [24570 24588])
+                    ("INFO_PROC_VUMODEL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [24593 24611])
+                    ("INFO_PROC_VERSION" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [24616 24634])
+                    ("INFO_PROC_DRVBUILDDATE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [24639 24662])
+                    ("INFO_PROC_HWMODEL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [24667 24685])
+                    ("INFO_PROC_MODELNAME" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [24690 24710])
+                    ("INFO_PROC_BOXTYPE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [24715 24733])
+                    ("ETHINFO_PROC_INFO" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [24784 24802])
+                    ("AVS_PROC_COLORFORMAT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [24893 24914])
+                    ("AVS_PROC_COLORFORMAT_CHOICES" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [24919 24948])
+                    ("AVS_PROC_FB" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [24953 24965])
+                    ("AVS_PROC_FB_CHOICES" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [24970 24990])
+                    ("AVS_PROC_INPUT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [24995 25010])
+                    ("AVS_PROC_INPUT_CHOICES" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [25015 25038])
+                    ("AVS_PROC_SB" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [25043 25055])
+                    ("AVS_PROC_SB_CHOICES" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [25060 25080])
+                    ("AVS_PROC_VOLUME" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [25085 25101])
+                    ("DENC_PROC_WSS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [25149 25163])
+                    ("DENC_PROC_WSS_CHOICES" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [25168 25190])
+                    ("AUD_PROC_J1_MUTE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [25238 25255])
+                    ("AUD_PROC_AC3" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [25260 25273])
+                    ("AUD_PROC_AC3_CHOICES" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [25278 25299])
+                    ("AUD_PROC_AAC" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [25304 25317])
+                    ("AUD_PROC_AAC_CHOICES" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [25322 25343])
+                    ("AUD_PROC_AUDIO_DELAY_BITSTREAM" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [25348 25379])
+                    ("AUD_PROC_AUDIO_DELAY_PCM" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [25384 25409])
+                    ("AUD_PROC_FORCE_HDMI_AUDIO_DISABLE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [25414 25448])
+                    ("AUD_PROC_PTS_OFFSET" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [25453 25473])
+                    ("FB_PROC_ALPHA_VALUE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [25523 25543])
+                    ("FB_PROC_ALPHA_OP" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [25548 25565])
+                    ("FB_PROC_3DMODE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [25570 25585])
+                    ("FB_PROC_ZNORM" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [25590 25604])
+                    ("FB_PROC_DST_LEFT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [25609 25626])
+                    ("FB_PROC_DST_WIDTH" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [25631 25649])
+                    ("FB_PROC_DST_TOP" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [25654 25670])
+                    ("FB_PROC_DST_HEIGHT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [25675 25694])
+                    ("FB_PROC_PRIMARY_3D" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [25699 25718])
+                    ("FB_PROC_PRIMARY_ZOFFSET" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [25723 25747])
+                    ("LCD_PROC_TIMESHIFT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [25968 25987])
+                    ("LCD_PROC_RECODING" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [25992 26010])
+                    ("LCD_PROC_VIDEO_FIFO_DEPTH" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [26015 26041])
+                    ("LCD_PROC_VIDEO_SEEK_SPEED" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [26046 26072])
+                    ("LCD_PROC_VIDEO_SEEK_MODE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [26077 26102])
+                    ("LCD_PROC_PLAY" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [26164 26178])
+                    ("LCD_PROC_REC" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [26183 26196])
+                    ("LCD_PROC_STANDBY" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [26201 26218])
+                    ("LCD_PROC_SCRAMBLE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [26223 26241])
+                    ("LCD_PROC_LOCK" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [26246 26260])
+                    ("LCD_PROC_DVR" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [26265 26278])
+                    ("LCD_PROC_HD" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [26283 26295])
+                    ("LCD_PROC_MP3" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [26300 26313])
+                    ("LCD_PROC_DVD" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [26318 26331])
+                    ("LCD_PROC_AC3" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [26336 26349])
+                    ("LCD_PROC_DVIX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [26354 26368])
+                    ("LCD_PROC_SCROLL_DELAY" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [26373 26395])
+                    ("LCD_PROC_TXT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [26400 26413])
+                    ("LCD_PROC_BRIGHTNESS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [26418 26438])
+                    ("LCD_PROC_SCROLL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [26443 26459])
+                    ("LCD_PROC_ALL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [26464 26477])
+                    ("VIDEO_PROC_ALPHA" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [26527 26544])
+                    ("VIDEO_PROC_ASPECT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [26549 26567])
+                    ("VIDEO_PROC_ASPECT_CHOICES" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [26572 26598])
+                    ("VIDEO_PROC_HDMI_COLORSPACE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [26603 26630])
+                    ("VIDEO_PROC_HDMI_COLORSPACE_CHOICES" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [26635 26670])
+                    ("VIDEO_PROC_POLICY" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [26675 26693])
+                    ("VIDEO_PROC_POLICY2" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [26698 26717])
+                    ("VIDEO_PROC_POLICY_CHOICES" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [26722 26748])
+                    ("VIDEO_PROC_VIDEOMODE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [26753 26774])
+                    ("VIDEO_PROC_VIDEOMODE_50HZ" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [26779 26805])
+                    ("VIDEO_PROC_VIDEOMODE_50HZ_CHOICES" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [26810 26844])
+                    ("VIDEO_PROC_VIDEOMODE_60HZ" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [26849 26875])
+                    ("VIDEO_PROC_VIDEOMODE_60HZ_CHOICES" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [26880 26914])
+                    ("VIDEO_PROC_VIDEOMODE_CHOICES" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [26919 26948])
+                    ("VIDEO_PROC_VIDEOMODE_PREFERRED" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [26953 26984])
+                    ("VMPEG_PROC_DEINTERLACE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [27044 27067])
+                    ("VMPEG_PROC_DEINTERLACE_CHOICES" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [27072 27103])
+                    ("VMPEG_PROC_ZOOMIN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [27163 27181])
+                    ("VMPEG_PROC_ZOOMRATE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [27186 27206])
+                    ("VMPEG_PROC_DST_WIDTH" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [27211 27232])
+                    ("VMPEG_PROC_DST_HEIGHT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [27237 27259])
+                    ("VMPEG_PROC_DST_LEFT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [27264 27284])
+                    ("VMPEG_PROC_DST_TOP" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [27289 27308])
+                    ("VMPEG_PROC_ASPECT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [27313 27331])
+                    ("VMPEG_PROC_CODEC" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [27336 27353])
+                    ("VMPEG_PROC_FALLBACK_FRAMERATE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [27358 27388])
+                    ("VMPEG_PROC_FALLBACK_FRAMERATE_CHOICES" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [27393 27431])
+                    ("VMPEG_PROC_FRAMERATE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [27436 27457])
+                    ("VMPEG_PROC_PROGRESSIVE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [27462 27485])
+                    ("VMPEG_PROC_PTS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [27490 27505])
+                    ("VMPEG_PROC_PTS_OFFSET" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [27510 27532])
+                    ("VMPEG_PROC_SHARPNESS_CONTROL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [27537 27566])
+                    ("VMPEG_PROC_SHARPNESS_CONTROL_CHOICES" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [27571 27608])
+                    ("VMPEG_PROC_SHARPNESS_VALUE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [27613 27640])
+                    ("VMPEG_PROC_SYNC_OFFSET" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [27645 27668])
+                    ("VMPEG_PROC_XRES" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [27673 27689])
+                    ("VMPEG_PROC_YRES" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [27694 27710])
+                    ("VMPEG_PROC_PEP_APPLY" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [27715 27737])
+                    ("VMPEG_PROC_PEP_CONTRAST" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [27742 27766])
+                    ("VMPEG_PROC_PEP_SATURATION" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [27771 27797])
+                    ("VMPEG_PROC_PEP_HUE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [27802 27821])
+                    ("VMPEG_PROC_PEP_BRIGHTNESS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [27826 27852])
+                    ("VMPEG_PROC_PEP_BLOCK_NOISE_REDUCTION" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [27857 27894])
+                    ("VMPEG_PROC_PEP_MOSQUITO_NOISE_REDUCTION" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [27899 27939])
+                    ("VMPEG_PROC_PEP_DIGITAL_CONTOUR_REMOVAL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [27944 27983])
+                    ("VMPEG_PROC_PEP_SPLIT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [27988 28009])
+                    ("VMPEG_PROC_PEP_SHARPNESS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [28014 28039])
+                    ("VMPEG_PROC_PEP_AUTO_FLESH" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [28044 28071])
+                    ("VMPEG_PROC_PEP_GREEN_BOOST" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [28076 28103])
+                    ("VMPEG_PROC_PEP_BLUE_BOOST" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [28108 28134])
+                    ("VMPEG_PROC_PEP_DYNAMIC_CONTRAST" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [28139 28171])
+                    ("VMPEG_PROC_PEP_SCALER_SHARPNESS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [28176 28208])
+                    ("TS_PROC_INPUT0" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [28266 28281])
+                    ("TS_PROC_INPUT0_CHOCIES" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [28286 28309])
+                    ("TS_PROC_INPUT1" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [28314 28329])
+                    ("TS_PROC_INPUT1_CHOCIES" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [28334 28357])
+                    ("TS_PROC_CI0_INPUT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [28362 28380])
+                    ("TS_PROC_CI0_INPUT_CHOCIES" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [28385 28411])
+                    ("TS_PROC_CI1_INPUT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [28416 28434])
+                    ("TS_PROC_CI1_INPUT_CHOCIES" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [28439 28465])
+                    ("TS_PROC_CI0_TSCLK" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [28470 28489])
+                    ("TS_PROC_CI0_TSCLK_CHOCIES" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [28494 28521])
+                    ("TS_PROC_CI1_TSCLK" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [28526 28545])
+                    ("TS_PROC_CI1_TSCLK_CHOCIES" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [28550 28576])
+                    ("FRONTEND_PROC_STATIC_CURRENT_LIMITING" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [28635 28673])
+                    ("FRONTEND_PROC_STATIC_CURRENT_LIMITING_CHOICES" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [28678 28724])
+                    ("FRONTEND1_PROC_STATIC_CURRENT_LIMITING" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [28784 28823])
+                    ("FRONTEND1_PROC_STATIC_CURRENT_LIMITING_CHOICES" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [28828 28875])
+                    ("RF_PROC_SWITCH" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [28880 28895])
+                    ("RF_PROC_SWITCH_CHOICES" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [28900 28923])
+                    ("IR_PROC_MOUSE_LEFT_RIGHT_SWAP" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [28976 29007])
+                    ("IR_PROC_MOUSE_LEFT_RIGHT_SWAP_CHOICES" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [29012 29051])
+                    ("IR_PROC_MOUSE_UP_DOWN_SWAP" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [29056 29095])
+                    ("IR_PROC_MOUSE_UP_DOWN_SWAP_CHOICES" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [29100 29139])
+                    ("IR_PROC_RC_KEY_SWAP" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [29144 29183])
+                    ("IR_PROC_RC_KEY_SWAP_CHOICES" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [29188 29227])
+                    ("IR_PROC_RC_MASK0" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [29232 29271])
+                    ("IR_PROC_RC_MASK1" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [29276 29294])
+                    ("MISC_PROC_12V_OUT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [29349 29386])
+                    ("HDMI_PROC_BYPASS_EDID_CHECKING" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [29441 29472])
+                    ("HDMI_PROC_ENABLE_HDMI_RESET" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [29477 29505])
+                    ("CIP_PROC_CCK_SLOT0" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [29510 29529])
+                    ("CIP_PROC_CCK_SLOT1" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [29568 29587])
+                    ("CIP_PROC_CIPATH_CONTROL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [29626 29650])
+                    ("AVSTEMP_PROC_INFO" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [29692 29710])
+                    ("RCU_BRAND_INFO" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [29744 29759])
+                    ("PROC_MAX_NUMBER" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [29798 29853]))                  
+                :type "enum")
+                nil [24528 29855])
+            ("BCM7335_PROC_NAME_MODEL" variable (:constant-flag t) nil [29865 29888])
+            ("BCM7335_PROC_NAME_VERSION" variable (:constant-flag t) nil [29914 29939])
+            ("BCM7335_PROC_NAME_MODEL" variable (:constant-flag t) nil [29966 29989])
+            ("BCM7335_PROC_NAME_VERSION" variable (:constant-flag t) nil [30015 30040])
+            ("driver_proc_done" function (:type "void") nil [30058 30121])
+            ("bcm_progress_write" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [30227 30246])
+                    ("__user" variable
+                       (:constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [30248 30267])
+                    ("" variable (:type ("userbuf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30268 30276])
+                    ("count" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [30277 30297])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [30297 30308]))                  
+                :type "int")
+                nil [30197 30630])
+            ("bcm_progress_read" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [30660 30670])
+                    ("start" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [30671 30684])
+                    ("off" variable (:type ("off_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30685 30695])
+                    ("bufsize" variable (:type "int") (reparse-symbol arg-sub-list) [30695 30707])
+                    ("eof" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [30708 30717])
+                    ("unused" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [30718 30731]))                  
+                :type "int")
+                nil [30631 30797])
+            ("progress_proc_init" function
+               (:typemodifiers ("static")
+                :type "int")
+                nil [30806 31492])
+            ("bcm_denc_Setproperty" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [31705 31724])
+                    ("__user" variable
+                       (:constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [31726 31745])
+                    ("" variable (:type ("userbuf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31746 31754])
+                    ("count" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [31755 31775])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [31775 31786]))                  
+                :type "int")
+                nil [31673 32590])
+            ("bcm_denc_Getproperty" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [32795 32806])
+                    ("start" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [32807 32820])
+                    ("off" variable (:type ("off_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32821 32831])
+                    ("count" variable (:type "int") (reparse-symbol arg-sub-list) [32832 32842])
+                    ("eof" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [32843 32852])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [32853 32864]))                  
+                :type "int")
+                nil [32763 33808])
+            ("bcm_vmpeg_Setproperty" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [34385 34404])
+                    ("__user" variable
+                       (:constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [34406 34425])
+                    ("" variable (:type ("userbuf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34426 34434])
+                    ("count" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [34435 34455])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [34455 34466]))                  
+                :type "int")
+                nil [34352 35377])
+            ("bcm_vmpeg_Getproperty" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [35584 35595])
+                    ("start" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [35596 35609])
+                    ("off" variable (:type ("off_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35610 35620])
+                    ("count" variable (:type "int") (reparse-symbol arg-sub-list) [35621 35631])
+                    ("eof" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [35632 35641])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [35642 35653]))                  
+                :type "int")
+                nil [35551 36596])
+            ("bcm_vmpeg0_Getproperty" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [37210 37221])
+                    ("start" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [37222 37235])
+                    ("off" variable (:type ("off_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [37236 37246])
+                    ("count" variable (:type "int") (reparse-symbol arg-sub-list) [37247 37257])
+                    ("eof" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [37258 37267])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [37268 37279]))                  
+                :type "int")
+                nil [37176 45396])
+            ("bcm_vmpeg0_Setproperty" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [45612 45631])
+                    ("__user" variable
+                       (:constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [45631 45650])
+                    ("" variable (:type ("userbuf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45650 45658])
+                    ("count" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [45659 45679])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [45679 45690]))                  
+                :type "int")
+                nil [45578 56476])
+            ("bcm_vmpeg1_Setproperty" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [58848 58866])
+                    ("__user" variable
+                       (:constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [58866 58885])
+                    ("" variable (:type ("userbuf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [58885 58893])
+                    ("count" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [58893 58913])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [58913 58924]))                  
+                :type "int")
+                nil [58814 65773])
+            ("bcm_vmpeg1_Getproperty" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [65982 65993])
+                    ("start" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [65994 66007])
+                    ("off" variable (:type ("off_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [66008 66018])
+                    ("count" variable (:type "int") (reparse-symbol arg-sub-list) [66019 66029])
+                    ("eof" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [66030 66039])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [66040 66051]))                  
+                :type "int")
+                nil [65948 73168])
+            ("bcm_video_Getproperty" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [75566 75577])
+                    ("start" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [75578 75591])
+                    ("off" variable (:type ("off_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [75592 75602])
+                    ("count" variable (:type "int") (reparse-symbol arg-sub-list) [75603 75613])
+                    ("eof" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [75614 75623])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [75624 75635]))                  
+                :type "int")
+                nil [75533 78114])
+            ("bcm_video_Setproperty" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [78328 78347])
+                    ("__user" variable
+                       (:constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [78349 78368])
+                    ("" variable (:type ("userbuf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [78369 78377])
+                    ("count" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [78378 78398])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [78398 78409]))                  
+                :type "int")
+                nil [78295 84342])
+            ("bcm_fbpri_Getproperty" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [85624 85635])
+                    ("start" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [85636 85649])
+                    ("off" variable (:type ("off_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [85650 85660])
+                    ("count" variable (:type "int") (reparse-symbol arg-sub-list) [85661 85671])
+                    ("eof" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [85672 85681])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [85682 85693]))                  
+                :type "int")
+                nil [85591 86525])
+            ("bcm_fbpri_Setproperty" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [86739 86758])
+                    ("__user" variable
+                       (:constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [86760 86779])
+                    ("" variable (:type ("userbuf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [86780 86788])
+                    ("count" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [86789 86809])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [86809 86820]))                  
+                :type "int")
+                nil [86706 88134])
+            ("bcm_fb_Getproperty" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [88720 88731])
+                    ("start" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [88732 88745])
+                    ("off" variable (:type ("off_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [88746 88756])
+                    ("count" variable (:type "int") (reparse-symbol arg-sub-list) [88757 88767])
+                    ("eof" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [88768 88777])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [88778 88789]))                  
+                :type "int")
+                nil [88690 90870])
+            ("bcm_fb_Setproperty" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [91078 91097])
+                    ("__user" variable
+                       (:constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [91099 91118])
+                    ("" variable (:type ("userbuf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [91119 91127])
+                    ("count" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [91128 91148])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [91148 91159]))                  
+                :type "int")
+                nil [91048 94132])
+            ("tsstart" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [95081 95107])
+            ("seekmode" variable
+               (:default-value "1"
+                :type "int")
+                nil [95108 95123])
+            ("tsmode" variable
+               (:default-value "false"
+                :type "bool")
+                nil [95124 95142])
+            ("get_tsmode" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [95159 95164]))                  
+                :type "bool")
+                nil [95143 95187])
+            ("Enigma_VfdTestmenu" variable
+               (:default-value "false"
+                :type "bool")
+                nil [95219 95251])
+            ("bcm_lcd_timeshift_Setproperty" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [95488 95507])
+                    ("__user" variable
+                       (:constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [95509 95528])
+                    ("" variable (:type ("userbuf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [95529 95537])
+                    ("count" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [95538 95558])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [95558 95569]))                  
+                :type "int")
+                nil [95447 102557])
+            ("bcm_lcd_timeshift_Getproperty" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [102780 102791])
+                    ("start" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [102792 102805])
+                    ("off" variable (:type ("off_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [102806 102816])
+                    ("count" variable (:type "int") (reparse-symbol arg-sub-list) [102817 102827])
+                    ("eof" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [102828 102837])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [102838 102849]))                  
+                :type "int")
+                nil [102739 104520])
+            ("bcm_info_write" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [105777 105796])
+                    ("__user" variable
+                       (:constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [105798 105817])
+                    ("" variable (:type ("userbuf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [105818 105826])
+                    ("count" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [105827 105847])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [105847 105858]))                  
+                :type "int")
+                nil [105751 106382])
+            ("bcm_info_read" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [106580 106591])
+                    ("start" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [106592 106605])
+                    ("off" variable (:type ("off_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [106606 106616])
+                    ("count" variable (:type "int") (reparse-symbol arg-sub-list) [106617 106627])
+                    ("eof" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [106628 106637])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [106638 106649]))                  
+                :type "int")
+                nil [106555 109012])
+            ("ts_input" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [109611 109637])
+            ("bcm_Tspath_Setproperty" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [109853 109872])
+                    ("__user" variable
+                       (:constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [109874 109893])
+                    ("" variable (:type ("userbuf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [109894 109902])
+                    ("count" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [109903 109923])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [109923 109934]))                  
+                :type "int")
+                nil [109819 120668])
+            ("bcm_Tspath_Getproperty" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [120877 120888])
+                    ("start" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [120889 120902])
+                    ("off" variable (:type ("off_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [120903 120913])
+                    ("count" variable (:type "int") (reparse-symbol arg-sub-list) [120914 120924])
+                    ("eof" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [120925 120934])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [120935 120946]))                  
+                :type "int")
+                nil [120843 123250])
+            ("bcm_audio_Getproperty" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [124278 124289])
+                    ("start" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [124290 124303])
+                    ("off" variable (:type ("off_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [124304 124314])
+                    ("count" variable (:type "int") (reparse-symbol arg-sub-list) [124315 124325])
+                    ("eof" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [124326 124335])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [124336 124347]))                  
+                :type "int")
+                nil [124245 125705])
+            ("bcm_audio_Setproperty" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [125919 125938])
+                    ("__user" variable
+                       (:constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [125940 125959])
+                    ("" variable (:type ("userbuf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [125960 125968])
+                    ("count" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [125969 125989])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [125989 126000]))                  
+                :type "int")
+                nil [125886 127626])
+            ("bcm_hdmi_Getproperty" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [128550 128561])
+                    ("start" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [128562 128575])
+                    ("off" variable (:type ("off_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [128576 128586])
+                    ("count" variable (:type "int") (reparse-symbol arg-sub-list) [128587 128597])
+                    ("eof" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [128598 128607])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [128608 128619]))                  
+                :type "int")
+                nil [128518 129467])
+            ("bcm_hdmi_Setproperty" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [129679 129698])
+                    ("__user" variable
+                       (:constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [129700 129719])
+                    ("" variable (:type ("userbuf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [129719 129727])
+                    ("count" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [129728 129748])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [129748 129759]))                  
+                :type "int")
+                nil [129647 130585])
+            ("bcm_ir_mouse_Getproperty" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [131025 131036])
+                    ("start" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [131037 131050])
+                    ("off" variable (:type ("off_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [131051 131061])
+                    ("count" variable (:type "int") (reparse-symbol arg-sub-list) [131062 131072])
+                    ("eof" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [131073 131082])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [131083 131094]))                  
+                :type "int")
+                nil [130989 132079])
+            ("bcm_ir_mouse_Setproperty" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [132299 132318])
+                    ("__user" variable
+                       (:constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [132320 132339])
+                    ("" variable (:type ("userbuf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [132340 132348])
+                    ("count" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [132349 132369])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [132369 132380]))                  
+                :type "int")
+                nil [132263 133368])
+            ("bcm_misc_Getproperty" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [134138 134149])
+                    ("start" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [134150 134163])
+                    ("off" variable (:type ("off_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [134164 134174])
+                    ("count" variable (:type "int") (reparse-symbol arg-sub-list) [134175 134185])
+                    ("eof" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [134186 134195])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [134196 134207]))                  
+                :type "int")
+                nil [134106 135020])
+            ("bcm_misc_Setproperty" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [135232 135251])
+                    ("__user" variable
+                       (:constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [135253 135272])
+                    ("" variable (:type ("userbuf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [135273 135281])
+                    ("count" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [135282 135302])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [135302 135313]))                  
+                :type "int")
+                nil [135200 136127])
+            ("bcm_ir_rc_Getproperty" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [136573 136584])
+                    ("start" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [136585 136598])
+                    ("off" variable (:type ("off_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [136599 136609])
+                    ("count" variable (:type "int") (reparse-symbol arg-sub-list) [136610 136620])
+                    ("eof" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [136621 136630])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [136631 136642]))                  
+                :type "int")
+                nil [136540 137579])
+            ("bcm_ir_rc_Setproperty" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [137793 137812])
+                    ("__user" variable
+                       (:constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [137814 137833])
+                    ("" variable (:type ("userbuf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [137834 137842])
+                    ("count" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [137843 137863])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [137863 137874]))                  
+                :type "int")
+                nil [137760 138816])
+            ("rf_switchmode" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [139279 139309])
+            ("bcm_frotend1_Getproperty" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [139523 139534])
+                    ("start" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [139535 139548])
+                    ("off" variable (:type ("off_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [139549 139559])
+                    ("count" variable (:type "int") (reparse-symbol arg-sub-list) [139560 139570])
+                    ("eof" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [139571 139580])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [139581 139592]))                  
+                :type "int")
+                nil [139487 140881])
+            ("bcm_frontend1_Setproperty" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [141103 141122])
+                    ("__user" variable
+                       (:constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [141124 141143])
+                    ("" variable (:type ("userbuf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [141144 141152])
+                    ("count" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [141153 141173])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [141173 141184]))                  
+                :type "int")
+                nil [141066 142429])
+            ("bcm_frotend_Getproperty" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [143207 143218])
+                    ("start" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [143219 143232])
+                    ("off" variable (:type ("off_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [143233 143243])
+                    ("count" variable (:type "int") (reparse-symbol arg-sub-list) [143244 143254])
+                    ("eof" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [143255 143264])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [143265 143276]))                  
+                :type "int")
+                nil [143172 144316])
+            ("bcm_frontend_Setproperty" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [144536 144555])
+                    ("__user" variable
+                       (:constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [144557 144576])
+                    ("" variable (:type ("userbuf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [144577 144585])
+                    ("count" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [144586 144606])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [144606 144617]))                  
+                :type "int")
+                nil [144500 145461])
+            ("bcm_ethinfo_Getproperty" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [146144 146155])
+                    ("start" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [146156 146169])
+                    ("off" variable (:type ("off_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [146170 146180])
+                    ("count" variable (:type "int") (reparse-symbol arg-sub-list) [146181 146191])
+                    ("eof" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [146192 146201])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [146202 146213]))                  
+                :type "int")
+                nil [146109 147588])
+            ("bcm_ethinfo_Setproperty" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [147806 147825])
+                    ("__user" variable
+                       (:constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [147827 147846])
+                    ("" variable (:type ("userbuf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [147847 147855])
+                    ("count" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [147856 147876])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [147876 147887]))                  
+                :type "int")
+                nil [147771 148477])
+            ("bcm_avs_Setproperty" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [148923 148942])
+                    ("__user" variable
+                       (:constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [148944 148963])
+                    ("" variable (:type ("userbuf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [148964 148972])
+                    ("count" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [148973 148993])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [148993 149004]))                  
+                :type "int")
+                nil [148892 159932])
+            ("bcm_avs_Getproperty" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [160135 160146])
+                    ("start" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [160147 160160])
+                    ("off" variable (:type ("off_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [160161 160171])
+                    ("count" variable (:type "int") (reparse-symbol arg-sub-list) [160172 160182])
+                    ("eof" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [160183 160192])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [160193 160204]))                  
+                :type "int")
+                nil [160104 161840])
+            ("misc_proc_init" function
+               (:typemodifiers ("static")
+                :type "int")
+                nil [162482 163551])
+            ("IR_RC_proc_init" function
+               (:typemodifiers ("static")
+                :type "int")
+                nil [163553 166213])
+            ("IR_Mouse_proc_init" function
+               (:typemodifiers ("static")
+                :type "int")
+                nil [166214 169189])
+            ("Hdmi_proc_init" function
+               (:typemodifiers ("static")
+                :type "int")
+                nil [169190 171042])
+            ("IR_proc_init" function
+               (:typemodifiers ("static")
+                :type "int")
+                nil [171043 171332])
+            ("frontend_proc_init" function
+               (:typemodifiers ("static")
+                :type "int")
+                nil [171333 176377])
+            ("audio_proc_init" function
+               (:typemodifiers ("static")
+                :type "int")
+                nil [176378 181157])
+            ("info_proc_init" function
+               (:typemodifiers ("static")
+                :type "int")
+                nil [181159 185328])
+            ("AvsAbs" variable (:constant-flag t) nil [185338 185344])
+            ("sign" variable (:constant-flag t) nil [185375 185379])
+            ("mantissa" variable (:constant-flag t) nil [185432 185440])
+            ("read_avs_temperature" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [185742 185753])
+                    ("start" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [185754 185767])
+                    ("off" variable (:type ("off_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [185768 185778])
+                    ("count" variable (:type "int") (reparse-symbol arg-sub-list) [185779 185789])
+                    ("eof" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [185790 185799])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [185800 185811]))                  
+                :type "int")
+                nil [185710 186831])
+            ("write_avs_temperature" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [187051 187070])
+                    ("__user" variable
+                       (:constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [187072 187091])
+                    ("" variable (:type ("userbuf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [187092 187100])
+                    ("count" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [187101 187121])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [187121 187132]))                  
+                :type "int")
+                nil [187018 187340])
+            ("avs_temp_proc_init" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("fp_dir" variable
+                       (:pointer 1
+                        :type ("proc_dir_entry" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [187624 187654]))                  
+                :type "int")
+                nil [187594 188424])
+            ("read_rcu_brand" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [188625 188636])
+                    ("start" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [188637 188650])
+                    ("off" variable (:type ("off_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [188651 188661])
+                    ("count" variable (:type "int") (reparse-symbol arg-sub-list) [188662 188672])
+                    ("eof" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [188673 188682])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [188683 188694]))                  
+                :type "int")
+                nil [188599 189203])
+            ("write_rcu_brand" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [189412 189431])
+                    ("__user" variable
+                       (:constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [189433 189452])
+                    ("" variable (:type ("userbuf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [189453 189461])
+                    ("count" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [189462 189482])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [189482 189493]))                  
+                :type "int")
+                nil [189385 190338])
+            ("rcu_brand_proc_init" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("fp_dir" variable
+                       (:pointer 1
+                        :type ("proc_dir_entry" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [190605 190635]))                  
+                :type "int")
+                nil [190574 191392])
+            ("Fan_proc_init" function
+               (:typemodifiers ("static")
+                :type "int")
+                nil [191394 192101])
+            ("denc_proc_init" function
+               (:typemodifiers ("static")
+                :type "int")
+                nil [192103 193965])
+            ("fb_proc_init" function
+               (:typemodifiers ("static")
+                :type "int")
+                nil [193966 201112])
+            ("lcd_proc_init" function
+               (:typemodifiers ("static")
+                :type "int")
+                nil [201114 211291])
+            ("video_proc_init" function
+               (:typemodifiers ("static")
+                :type "int")
+                nil [211293 254290])
+            ("ts_mux_proc_init" function
+               (:typemodifiers ("static")
+                :type "int")
+                nil [254292 261213])
+            ("nascam_proc_init" function
+               (:typemodifiers ("static")
+                :type "int")
+                nil [261214 262005])
+            ("avs_proc_init" function
+               (:typemodifiers ("static")
+                :type "int")
+                nil [262007 266793])
+            ("cckey_proc_data" variable
+               (:dereference 1
+                :type ("bcm7335_proc_data_t" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [267617 267668])
+            ("cck_parent_entry" variable
+               (:pointer 1
+                :type ("proc_dir_entry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [267669 267719])
+            ("cckey_slot_entry" variable
+               (:pointer 1
+                :dereference 1
+                :type ("proc_dir_entry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [267720 267773])
+            ("ci_path_status" variable
+               (:default-value "false"
+                :type "bool")
+                nil [267805 267845])
+            ("cipath_control_proc_data" variable (:type ("bcm7335_proc_data_t" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [267846 267903])
+            ("cipath_control_entry" variable
+               (:pointer 1
+                :type ("proc_dir_entry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [267904 267958])
+            ("bcm_cipath_control_SetProperty" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [268190 268208])
+                    ("__user" variable
+                       (:constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [268209 268228])
+                    ("" variable (:type ("userbuf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [268228 268236])
+                    ("count" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [268237 268257])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [268257 268268]))                  
+                :type "int")
+                nil [268148 269086])
+            ("bcm_cipath_control_GetProperty" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [269311 269322])
+                    ("start" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [269323 269336])
+                    ("off" variable (:type ("off_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [269337 269347])
+                    ("count" variable (:type "int") (reparse-symbol arg-sub-list) [269348 269358])
+                    ("eof" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [269359 269368])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [269369 269380]))                  
+                :type "int")
+                nil [269269 269406])
+            ("bcm_ciplus_cckey_SetProperty" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [269891 269909])
+                    ("__user" variable
+                       (:constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [269910 269929])
+                    ("" variable (:type ("userbuf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [269929 269937])
+                    ("count" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [269938 269958])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [269958 269969]))                  
+                :type "int")
+                nil [269851 270943])
+            ("bcm_ciplus_cckey_GetProperty" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [271168 271179])
+                    ("start" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [271180 271193])
+                    ("off" variable (:type ("off_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [271194 271204])
+                    ("count" variable (:type "int") (reparse-symbol arg-sub-list) [271205 271215])
+                    ("eof" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [271216 271225])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [271226 271237]))                  
+                :type "int")
+                nil [271128 271852])
+            ("cckey_proc_init" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [272136 272141]))                  
+                :type "int")
+                nil [272109 274900])
+            ("bcm_proc_init" function (:type "int") nil [274902 276369]))          
+      :file "bcmprocfs.c"
+      :pointmax 276371
+      :fsize 276370
+      :lastmodtime '(22220 859 810521 292000)
+      :unmatched-syntax '((punctuation 269928 . 269929) (punctuation 268227 . 268228) (punctuation 189451 . 189452) (punctuation 187090 . 187091) (punctuation 148962 . 148963) (punctuation 147845 . 147846) (punctuation 144575 . 144576) (punctuation 141142 . 141143) (punctuation 137832 . 137833) (punctuation 135271 . 135272) ...)
+      :lexical-table 
+        '(("AVS_FB_CHOICES" . ((string "\"fb_choices\"" 16231 . 16243)))
+          ("AVS_INPUT_CHOICES" . ((string "\"input_choices\"" 16330 . 16345)))
+          ("AVS_SB_CHOICES" . ((string "\"sb_choices\"" 16429 . 16441)))
+          ("FB_ALPHA_VALUE" . ((string "\"alpha_value\"" 16637 . 16650)))
+          ("LCD_DVIX" . ((string "\"symbol_dvix\"" 18108 . 18121)))
+          ("LCD_BRIGHTNESS" . ((string "\"oled_brightness\"" 18409 . 18426)))
+          ("VIDEO_VIDEOMODE" . ((string "\"videomode\"" 19333 . 19344)))
+          ("AUD_AC3_CHOICES" . ((string "\"ac3_choices\"" 19883 . 19896)))
+          ("AUD_AAC" . ((string "\"aac\"" 19939 . 19944)))
+          ("AUD_AUDIO_DELAY_PCM" . ((string "\"audio_delay_pcm\"" 20109 . 20126)))
+          ("AUD_PTS_OFFSET" . ((string "\"pts_offset\"" 20238 . 20250)))
+          ("VMPEG_DEINTERLACE_CHOICES" . ((string "\"deinterlace_choices\"" 20364 . 20385)))
+          ("VMPEG_DST_WIDTH" . ((string "\"dst_width\"" 20539 . 20550)))
+          ("VMPEG_FALLBACK_FRAMERATE_CHOICES" . ((string "\"fallback_framerate_choices\"" 20938 . 20966)))
+          ("VMPEG_PTS_OFFSET" . ((string "\"pts_offset\"" 21179 . 21191)))
+          ("TS_CI1_INPUT_CHOICES" . ((string "\"ci1_input_choices\"" 22873 . 22892)))
+          ("FRONTEND_STATIC_CURRENT_LIMITING" . ((string "\"static_current_limiting\"" 23140 . 23165)))
+          ("IR_MOUSE_UP_DOWN_SWAP" . ((string "\"up_down_swap\"" 23547 . 23561)))
+          ("INFO_BOXTYPE" . ((string "\"boxtype\"" 24260 . 24269)))
+          ("trace_procfs" (spp-arg-list ("x") 745 . 748))
+          ("PROC_DEBG" . ((number "0" 1078 . 1079)))
+          ("AVIA_AV_EVENT_TIMER" . ((symbol "HZ" 1108 . 1110)))
+          ("DENC_WSS" . ((string "\"wss\"" 16533 . 16538)))
+          ("FB_3DMODE" . ((string "\"3dmode\"" 16744 . 16752)))
+          ("LCD_TIMESHIFT" . ((string "\"symbol_timeshift\"" 17499 . 17517)))
+          ("LCD_REC" . ((string "\"symbol_rec\"" 17623 . 17635)))
+          ("VIDEO_VIDEOMODE_50HZ" . ((string "\"videomode_50hz\"" 19390 . 19406)))
+          ("AUD_J1_MUTE" . ((string "\"j1_mute\"" 19783 . 19792)))
+          ("VMPEG_PTS" . ((string "\"pts\"" 21128 . 21133)))
+          ("VMPEG_PEP_BLOCK_NOISE_REDUCTION" . ((string "\"pep_block_noise_reduction\"" 21899 . 21926)))
+          ("VMPEG_PEP_DIGITAL_CONTOUR_REMOVAL" . ((string "\"pep_digital_contour_removal\"" 22048 . 22077)))
+          ("TS_CI0_TSCLK_CHOICES" . ((string "\"ci0_tsclk_choices\"" 22969 . 22988)))
+          ("IR_MOUSE_LEFT_RIGHT_SWAP" . ((string "\"left_right_swap\"" 23401 . 23418)))
+          ("INFO_MODEL" . ((string "\"model\"" 24124 . 24131)))
+          ("VIDEO_PROC_VIDEOMODE_CHOICES_LIST" . ((string "\"pal ntsc 480i 576i 1080i 1080p 720p 480p 1080i50 1080p24 1080p25 1080p30 1250i50 720p24 720p50 576p 1440x240 1440x288_50 1366x768 1366x768_50 640x480 800x600 1024x768 1280x768 1280x720_50 1280x720 1280x720_ReducedBlank\"" 15299 . 15519)))
+          ("TS_PROC_INPUT1_CHOCIES_LIST" . ((string "\"CI0 CI1 A B\"" 15729 . 15742)))
+          ("FB_PRIMARY_ZOFFSET" . ((string "\"zoffset\"" 17099 . 17108)))
+          ("LCD_TXT" . ((string "\"show_txt\"" 18351 . 18361)))
+          ("VIDEO_VIDEOMODE_60HZ" . ((string "\"videomode_60hz\"" 19522 . 19538)))
+          ("VMPEG_ZOOMRATE" . ((string "\"zoomrate\"" 20483 . 20493)))
+          ("TS_CI0_INPUT" . ((string "\"ci0_input\"" 22733 . 22744)))
+          ("TS_CI1_TSCLK_CHOICES" . ((string "\"ci1_tsclk_choices\"" 23065 . 23084)))
+          ("IR_MOUSE_UP_DOWN_SWAP_CHOICES" . ((string "\"up_down_swap_choice\"" 23613 . 23634)))
+          ("HDMI_BYPASS_EDID_CHECKING" . ((string "\"enable_hdmi_reset\"" 24080 . 24099)))
+          ("AVS_TEMP_PROC_NAME" . ((string "\"temp_sensor_avs\"" 24404 . 24421)))
+          ("FIRSTMAC_ADDR" . ((number "0xC" 5587 . 5590)))
+          ("MACADDR_STRIDE" . ((number "0x8" 5615 . 5618)))
+          ("VIDEO_PROC_HDMI_COLORSPACE_CHOICES_LIST" . ((string "\"Edid(Auto) Hdmi_Rgb Itu_R_BT_709 Unknown DVI_Full_Range_RGB FCC Itu_R_BT_470_2_BG Smpte_170M Smpte_240M bestfit letterbox panscan nonlinear\"" 14554 . 14695)))
+          ("AVS_FB" . ((string "\"fb\"" 16187 . 16191)))
+          ("AVS_INPUT" . ((string "\"input\"" 16283 . 16290)))
+          ("AVS_SB" . ((string "\"sb\"" 16385 . 16389)))
+          ("FB_DST_WIDTH" . ((string "\"dst_width\"" 16895 . 16906)))
+          ("LCD_PLAY" . ((string "\"symbol_play\"" 17564 . 17577)))
+          ("LCD_STANDBY" . ((string "\"symbol_stanby\"" 18169 . 18184)))
+          ("LCD_RECORDINGS" . ((string "\"recodings\"" 18603 . 18614)))
+          ("VIDEO_HDMI_COLORSPACE_CHOICES" . ((string "\"hdmi_colorspace_choices\"" 19091 . 19116)))
+          ("AUD_AC3" . ((string "\"ac3\"" 19835 . 19840)))
+          ("VMPEG_DEINTERLACE" . ((string "\"deinterlace\"" 20299 . 20312)))
+          ("VMPEG_FALLBACK_FRAMERATE" . ((string "\"fallback_framerate\"" 20872 . 20892)))
+          ("VMPEG_FRAMERATE" . ((string "\"framerate\"" 21012 . 21023)))
+          ("VMPEG_PEP_HUE" . ((string "\"pep_hue\"" 21782 . 21791)))
+          ("TS_INPUT0_CHOICES" . ((string "\"input0_choices\"" 22594 . 22610)))
+          ("TS_CI1_INPUT" . ((string "\"ci1_input\"" 22829 . 22840)))
+          ("IR_MOUSE_LEFT_RIGHT_SWAP_CHOICES" . ((string "\"left_right_swap_choices\"" 23470 . 23495)))
+          ("INFO_MODELNAME" . ((string "\"modelname\"" 24159 . 24170)))
+          ("INFO_VUMODEL" . ((string "\"vumodel\"" 24227 . 24236)))
+          ("TS_PROC_CI0_TSCLK_CHOCIES_LIST" . ((string "\"normal high\"" 15837 . 15850)))
+          ("FB_DST_HEIGHT" . ((string "\"dst_height\"" 16999 . 17011)))
+          ("VMPEG_SYNC_OFFSET" . ((string "\"sync_offset\"" 21438 . 21451)))
+          ("VMPEG_PEP_DYNAMIC_CONTRAST" . ((string "\"pep_dynamic_contrast\"" 22428 . 22450)))
+          ("TS_INPUT1_CHOICES" . ((string "\"input1_choices\"" 22684 . 22700)))
+          ("TS_CI0_TSCLK" . ((string "\"ci0_tsclk\"" 22925 . 22936)))
+          ("RCU_BRAND_PROC_NAME" . ((string "\"rcu_brand\"" 24481 . 24492)))
+          ("TS_PROC_CI1_TSCLK_CHOCIES_LIST" . ((string "\"normal high\"" 15945 . 15958)))
+          ("FB_DST_TOP" . ((string "\"dst_top\"" 16948 . 16957)))
+          ("LCD_LOCK" . ((string "\"symbol_lock\"" 17748 . 17761)))
+          ("LCD_DVD" . ((string "\"symbol_dvd\"" 17988 . 18000)))
+          ("VIDEO_ASPECT_CHOICES" . ((string "\"aspect_choices\"" 18966 . 18982)))
+          ("VMPEG_SHARPNESS_CONTROL_CHOICES" . ((string "\"sharpness_control_choices\"" 21302 . 21329)))
+          ("VMPEG_XRES" . ((string "\"xres\"" 21497 . 21503)))
+          ("TS_CI1_TSCLK" . ((string "\"ci1_tsclk\"" 23021 . 23032)))
+          ("RF_SWITCH_CHOICES" . ((string "\"rf_switch_choices\"" 23329 . 23348)))
+          ("MISC_12V_OUTPUT" . ((string "\"12V_output\"" 23687 . 23699)))
+          ("BCM7335_PROC_NAME_MODEL" . ((string "\"model\"" 29999 . 30006)))
+          ("FLASH_LENGTH" . ((number "0x8A" 5558 . 5562)))
+          ("TS_PROC_INPUT0_CHOCIES_LIST" . ((string "\"CI0 CI1 A B\"" 15673 . 15686)))
+          ("AVS_COLORFORMAT_CHOICES" . ((string "\"colorformat_choices\"" 16126 . 16147)))
+          ("LCD_DVR" . ((string "\"symbol_dvr\"" 17809 . 17821)))
+          ("LCD_VIDEO_FIFO_DEPTH" . ((string "\"video_fifo_depth\"" 18662 . 18680)))
+          ("VIDEO_HDMI_COLORSPACE" . ((string "\"hdmi_colorspace\"" 19028 . 19045)))
+          ("VIDEO_VIDEOMODE_PREFERRED" . ((string "\"videomode_preferred\"" 19719 . 19740)))
+          ("AUD_FORCE_HDMI_AUDIO_DISABLE" . ((string "\"force_hdmi_audio_disable\"" 20170 . 20196)))
+          ("VMPEG_YRES" . ((string "\"yres\"" 21549 . 21555)))
+          ("VMPEG_PEP_BRIGHTNESS" . ((string "\"pep_brightness\"" 21837 . 21853)))
+          ("VMPEG_PEP_MOSQUITO_NOISE_REDUCTION" . ((string "\"pep_mosquito_noise_reduction\"" 21972 . 22002)))
+          ("VMPEG_PEP_SCALER_SHARPNESS" . ((string "\"pep_scaler_sharpness\"" 22496 . 22518)))
+          ("TS_INPUT0" . ((string "\"input0\"" 22553 . 22561)))
+          ("HDMI_ENABLE_HDMI_RESET" . ((string "\"bypass_edid_checking\"" 24006 . 24028)))
+          ("VIDEO_PROC_POLICY_CHOICES_LIST" . ((string "\"bestfit letterbox panscan nonlinear\"" 14736 . 14773)))
+          ("VIDEO_PROC_VIDEOMODE_ALL_CHOICES_LIST" . ((string "\"pal ntsc 480i 576i 480p 576p 720p50 720p 1080i 1080i50\"" 15567 . 15623)))
+          ("AVS_VOLUME" . ((string "\"volume\"" 16481 . 16489)))
+          ("FB_ALPHA_OP" . ((string "\"alpha_op\"" 16692 . 16702)))
+          ("LCD_SCROLL" . ((string "\"scroll_repeats\"" 18287 . 18303)))
+          ("LCD_VIDEO_SEEK_SPEED" . ((string "\"video_seek_speed\"" 18794 . 18812)))
+          ("VIDEO_POLICY2" . ((string "\"policy2\"" 19216 . 19225)))
+          ("AUD_AUDIO_DELAY_BITSTREAM" . ((string "\"audio_delay_bitstream\"" 20043 . 20066)))
+          ("VMPEG_PROGRESSIVE" . ((string "\"progressive\"" 21069 . 21082)))
+          ("VMPEG_PEP_SATURATION" . ((string "\"pep_saturation\"" 21720 . 21736)))
+          ("TS_INPUT1" . ((string "\"input1\"" 22643 . 22651)))
+          ("INFO_VERSION" . ((string "\"version\"" 24293 . 24302)))
+          ("INFO_HWMODEL" . ((string "\"hwmodel\"" 24365 . 24374)))
+          ("AvsAbs" (spp-arg-list ("x") 185344 . 185347) . ((semantic-list "(((x)<0)?-(x):(x))" 185348 . 185366)))
+          ("FB_PROPERTY_MAX_COUNT" . ((number "8" 13177 . 13178)))
+          ("FB_PRIMARY_3D" . ((string "\"3d\"" 17053 . 17057)))
+          ("LCD_AC3" . ((string "\"symbol_ac3\"" 18048 . 18060)))
+          ("LCD_ALL" . ((string "\"show_symbols\"" 18474 . 18488)))
+          ("VIDEO_ASPECT" . ((string "\"aspect\"" 18912 . 18920)))
+          ("VMPEG_SHARPNESS_CONTROL" . ((string "\"sharpness_control\"" 21237 . 21256)))
+          ("VMPEG_SHARPNESS_VALUE" . ((string "\"sharpness_value\"" 21375 . 21392)))
+          ("VMPEG_PEP_APPLY" . ((string "\"pep_apply\"" 21603 . 21614)))
+          ("VMPEG_PEP_CONTRAST" . ((string "\"pep_contrast\"" 21660 . 21674)))
+          ("RF_SWITCH" . ((string "\"rf_switch\"" 23286 . 23297)))
+          ("TS_PROC_CI0_INPUT_CHOCIES_LIST" . ((string "\"CI1 A B\"" 15785 . 15794)))
+          ("AVS_COLORFORMAT" . ((string "\"colorformat\"" 16073 . 16086)))
+          ("LCD_SCRAMBLE" . ((string "\"symbol_scramble\"" 17683 . 17700)))
+          ("VIDEO_POLICY_CHOICES" . ((string "\"policy_choices\"" 19271 . 19287)))
+          ("VMPEG_ZOOMIN" . ((string "\"zoomin\"" 20430 . 20438)))
+          ("VMPEG_DST_TOP" . ((string "\"dst_top\"" 20710 . 20719)))
+          ("VMPEG_PEP_SHARPNESS" . ((string "\"pep_sharpness\"" 22180 . 22195)))
+          ("VMPEG_PEP_AUTO_FLESH" . ((string "\"pep_auto_flesh\"" 22241 . 22257)))
+          ("VMPEG_PEP_GREEN_BOOST" . ((string "\"pep_green_boost\"" 22303 . 22320)))
+          ("TS_PROC_CI1_INPUT_CHOCIES_LIST" . ((string "\"CI0 A B\"" 15893 . 15902)))
+          ("VIDEO_ALPHA" . ((string "\"alpha\"" 18859 . 18866)))
+          ("VIDEO_VIDEOMODE_CHOICES" . ((string "\"videomode_choices\"" 19654 . 19673)))
+          ("AUD_AAC_CHOICES" . ((string "\"aac_choices\"" 19987 . 20000)))
+          ("FRONTEND_STATIC_CURRENT_LIMITING_CHOICES" . ((string "\"static_current_limiting_choices\"" 23220 . 23253)))
+          ("IR_RC_KEY_SWAP" . ((string "\"key_swap\"" 23751 . 23761)))
+          ("IR_RC_MASK0" . ((string "\"rc_mask0\"" 23883 . 23893)))
+          ("sign" (spp-arg-list ("f") 185379 . 185382) . 
+              ((semantic-list "((f)<0)" 185383 . 185390) (punctuation "?" 185390 . 185391) (string "'-'" 185391 . 185394) (punctuation ":" 185394 . 185395) (string "' '" 185395 . 185398)))
+          ("DENC_WSS_CHOICES" . ((string "\"wss_choices\"" 16581 . 16594)))
+          ("FB_ZNORM" . ((string "\"znorm\"" 16794 . 16801)))
+          ("VIDEO_VIDEOMODE_50HZ_CHOICES" . ((string "\"videomode_50hz_choices\"" 19452 . 19476)))
+          ("VMPEG_DST_LEFT" . ((string "\"dst_left\"" 20654 . 20664)))
+          ("VMPEG_CODEC" . ((string "\"codec\"" 20819 . 20826)))
+          ("VMPEG_PEP_BLUE_BOOST" . ((string "\"pep_blue_boost\"" 22366 . 22382)))
+          ("IR_RC_MASK1" . ((string "\"rc_mask1\"" 23945 . 23955)))
+          ("INFO_DRVBUILDDATE" . ((string "\"buildate\"" 24331 . 24341)))
+          ("ETHINFO" . ((string "\"driver/ethinfo\"" 16013 . 16029)))
+          ("FB_DST_LEFT" . ((string "\"dst_left\"" 16843 . 16853)))
+          ("LCD_HD" . ((string "\"symbol_hd\"" 17869 . 17880)))
+          ("LCD_MP3" . ((string "\"symbol_mp3\"" 17928 . 17940)))
+          ("LCD_SCROLL_DELAY" . ((string "\"scroll_delay\"" 18232 . 18246)))
+          ("LCD_VIDEO_SEEK_MODE" . ((string "\"video_seek_mode\"" 18728 . 18745)))
+          ("VIDEO_POLICY" . ((string "\"policy\"" 19162 . 19170)))
+          ("VIDEO_VIDEOMODE_60HZ_CHOICES" . ((string "\"videomode_60hz_choices\"" 19584 . 19608)))
+          ("VMPEG_DST_HEIGHT" . ((string "\"dst_height\"" 20596 . 20608)))
+          ("VMPEG_ASPECT" . ((string "\"aspect\"" 20765 . 20773)))
+          ("VMPEG_PEP_SPLIT" . ((string "\"pep_split\"" 22123 . 22134)))
+          ("TS_CI0_INPUT_CHOICES" . ((string "\"ci0_input_choices\"" 22777 . 22796)))
+          ("IR_RC_KEY_SWAP_CHOICES" . ((string "\"key_swap_choices\"" 23813 . 23831)))
+          ("INFO_CHIPSET" . ((string "\"chipset\"" 24194 . 24203)))
+          ("BCM7335_PROC_NAME_VERSION" . ((string "\"version\"" 30048 . 30057)))
+          ("mantissa" (spp-arg-list ("f") 185440 . 185443) . ((semantic-list "(AvsAbs((int)(f)/1000))" 185444 . 185467)))
+          )
+)
+    (semanticdb-table "ver.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("DRV_COMPILE_TIME" variable (:constant-flag t) nil [9 25])
+            ("DRV_COMPILE_TIME1" variable (:constant-flag t) nil [45 62]))          
+      :file "ver.h"
+      :pointmax 74
+      :fsize 73
+      :lastmodtime '(22220 862 842521 165000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DRV_COMPILE_TIME" . ((string "\"23/02/16\"" 26 . 36)))
+          ("DRV_COMPILE_TIME1" . ((string "\"15:59:42\"" 63 . 73)))
+          )
+))
+  :file "!home!babel!Build!DRV!BcmLinuxDVB!DRV!brcmlinuxdvbvix!core!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

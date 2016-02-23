@@ -1,0 +1,24 @@
+#include <iostream>
+#include "trafficlight.h"
+
+
+std::string Trafficlight::getState(){
+  return state;
+}
+
+void Trafficlight::setSate(std::string state){
+  Trafficlight::state = state;
+}
+
+int Trafficlight::getCountDownTime(){
+  return countDownTime;
+}
+
+void Trafficlight::setCountDownTime(int countDownTime){
+  Trafficlight::countDownTime = countDownTime;
+}
+
+int main(int argc, char *argv[])
+{
+  Trafficlight::set
+}

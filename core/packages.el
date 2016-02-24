@@ -34,6 +34,7 @@
     iedit
     linum
     magit
+    multiple-cursors
     ;;=============> C/C++
     flymake-google-cpplint
     flymake-cursor

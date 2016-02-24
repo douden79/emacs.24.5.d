@@ -26,9 +26,11 @@
 (add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
 (add-to-list 'auto-mode-alist '("\\.h\\'" . c-mode))
 (set-default 'semantic-case-fold t)
+
 ;; Add Your include path c/c++ project.
 ;;(semantic-add-system-include "~/Software/deal.II/include/" 'c++-mode)
 ;;(semantic-add-system-include "/usr/local/boost_1_54_0/" 'c++-mode)
 (semantic-add-system-include "/home/babel/Build/DRV/BcmLinuxDVB/DRV/brcmlinuxdvbvix/" 'c-mode)
 
+;;++++>> Edit
 (provide 'editor)

@@ -38,23 +38,31 @@ by babel.")
 (require 'core)
 (require 'keybindings)
 (require 'autocomplete)
+(require 'c++)
+(require 'python)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(ansi-color-faces-vector
+   [default default default italic underline success warning error])
+ '(ansi-color-names-vector
+   ["black" "red3" "ForestGreen" "yellow3" "blue" "magenta3" "DeepSkyBlue" "gray50"])
  '(blink-cursor-mode nil)
  '(column-number-mode t)
  '(current-language-environment "Korean")
+ '(custom-enabled-themes (quote (leuven)))
  '(custom-safe-themes
    (quote
-    ("ad950f1b1bf65682e390f3547d479fd35d8c66cafa2b8aa28179d78122faa947" "12b4427ae6e0eef8b870b450e59e75122d5080016a9061c9696959e50d578057" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" "885ef8634f55df1fa067838330e3aa24d97be9b48c30eadd533fde4972543b55" default)))
+    ("b7b2cd8c45e18e28a14145573e84320795f5385895132a646ff779a141bbda7e" "d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" "ad950f1b1bf65682e390f3547d479fd35d8c66cafa2b8aa28179d78122faa947" "12b4427ae6e0eef8b870b450e59e75122d5080016a9061c9696959e50d578057" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" "885ef8634f55df1fa067838330e3aa24d97be9b48c30eadd533fde4972543b55" default)))
  '(ecb-layout-name "left-dir-plus-speedbar")
  '(ecb-options-version "2.40")
  '(ecb-source-path (quote (("/" "/"))))
  '(ecb-windows-width 0.25)
  '(prefer-coding-system (quote utf-8))
+ '(show-paren-mode t)
  '(size-indication-mode t)
  '(tool-bar-mode nil))
 (custom-set-faces

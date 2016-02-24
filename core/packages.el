@@ -17,27 +17,30 @@
 ;;----------------------~---------------------~-----------------------
 (defvar babel-packages
   '(
-    ;;==> GUI.
-    moe-theme
-    ;;==> Enhanced.
+    ;;=============> GUI.
+    leuven-theme
+    ;;=============> Enhanced.
     smex
-    ;;==> Edit.
+    ;;=============> Edit.
     smartparens
-    ;;==> IDE
+    ;;=============> IDE
+    ecb
     auto-complete
     yasnippet
     highlight-symbol
     function-args
-    ;;==> Default.
+    ;;=============> Default.
     better-defaults
     iedit
     linum
     magit
+    ;;=============> C/C++
+    flymake-google-cpplint
+    flymake-cursor
+    google-c-style
     )
   "A list of packages to ensure are installed at launch.")
 
-;;; requirement elpy packages.
-;; sudo apt-get install pip
 (defun babel-packages-installed-p ()
   "Check if all packages in `babel-packages' are installed."
   (every #'package-installed-p babel-packages))

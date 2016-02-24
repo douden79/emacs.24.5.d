@@ -5,10 +5,6 @@
 ;; the toolbar is just a waste of valuable screen estate
 ;; in a tty tool-bar-mode does not properly auto-load, and is
 
-;;++++> Theme
-(require 'moe-theme)
-(moe-light)
-
 ;;++++> Cursor
 (set-cursor-color "SkyBlue2")
 
@@ -18,6 +14,7 @@
 
 ;;++++> Line
 (global-hl-line-mode +1)
+
 ;;(set-face-background 'hl-line "#000094")
 (set-face-foreground 'highlight nil)
 
@@ -33,6 +30,7 @@
 				  (if (car (window-margins))
 				      (car (window-margins)) 1)
 				  ))))
+
 (advice-add #'linum-update-window :after #'linum-update-window-scale-fix)
 
 (provide 'gui)

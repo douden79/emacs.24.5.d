@@ -39,7 +39,7 @@ by babel.")
 (require 'keybindings)
 (require 'autocomplete)
 (require 'c++)
-(require 'python)
+(require 'python-mode)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.

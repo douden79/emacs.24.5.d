@@ -32,5 +32,13 @@
 ;;(semantic-add-system-include "/usr/local/boost_1_54_0/" 'c++-mode)
 (semantic-add-system-include "/home/babel/Build/DRV/BcmLinuxDVB/DRV/brcmlinuxdvbvix/" 'c-mode)
 
-;;++++>> Edit
+;;++++>> tabbar ruler
+(setq tabbar-ruler-global-tabbar t)    ; get tabbar
+(setq tabbar-ruler-global-ruler t)     ; get global ruler
+;;(setq tabbar-ruler-popup-menu t)       ; get popup menu.
+;;(setq tabbar-ruler-popup-toolbar t)    ; get popup toolbar
+;;(setq tabbar-ruler-popup-scrollbar t)  ; show scroll-bar on mouse-move
+(require 'tabbar-ruler)
+
+;++++>> Edit
 (provide 'editor)

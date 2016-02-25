@@ -22,4 +22,7 @@
 your recently and most frequently used commands.")
 (global-set-key (kbd "M-x") 'smex)
 
+;;+++++> tabbar ruller
+(global-set-key (kbd "C-c t") 'tabbar-ruler-move)
+
 (provide 'keybindings)

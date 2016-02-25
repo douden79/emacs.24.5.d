@@ -19,6 +19,8 @@
   '(
     ;;=============> GUI.
     leuven-theme
+    hlinum
+    linum
     ;;=============> Enhanced.
     smex
     ;;=============> Edit.
@@ -29,6 +31,7 @@
     yasnippet
     highlight-symbol
     function-args
+    tabbar-ruler
     ;;=============> Default.
     better-defaults
     iedit
@@ -39,6 +42,9 @@
     flymake-google-cpplint
     flymake-cursor
     google-c-style
+    ;;=============> python
+    auto-virtualenv
+    ;;=============> syntax
     )
   "A list of packages to ensure are installed at launch.")
 
@@ -88,4 +94,3 @@ removing unwanted packages."
 ;; End:
 
 ;;; packages.el ends here!!!!.
-

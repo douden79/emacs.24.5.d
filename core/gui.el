@@ -33,5 +33,9 @@
 
 (advice-add #'linum-update-window :after #'linum-update-window-scale-fix)
 
+;;+++++> hlinum
+(require 'hlinum)
+(hlinum-activate)
+
 (provide 'gui)
 ;; ui.el ends here!!!!
